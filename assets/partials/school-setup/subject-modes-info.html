@@ -1,0 +1,13 @@
+<div class="panel panel-info">
+	<div class="panel-heading text-white text-center">
+		<span class="text-white">Subject Modes</span>
+	</div>
+	<div class="panel-body">
+		<div class='list-group'>
+			<div class="list-group-item" ng-repeat='item in subjectSelectionModes'>
+				<h5 ng-bind="item.name"></h5>
+				<p class='text-sm text-info' ng-bind="item.description"></p>
+			</div>
+		</div>
+	</div>
+</div>

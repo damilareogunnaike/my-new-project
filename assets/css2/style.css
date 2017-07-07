@@ -1,0 +1,20 @@
+body .login-page {
+  height: 100%;
+  width: 100%;
+  background: #861c90; }
+  body .login-page .login-form-container {
+    margin-top: 100px; }
+    body .login-page .login-form-container h2 {
+      color: #fff;
+      text-align: center; }
+    body .login-page .login-form-container .login-form {
+      background: white;
+      padding: 20px; }
+    body .login-page .login-form-container .footer {
+      padding-top: 10px; }
+      body .login-page .login-form-container .footer a {
+        color: #fff;
+        font-size: 13px;
+        text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

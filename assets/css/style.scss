@@ -1,0 +1,244 @@
+@import "_global.scss";
+@import "_reset.scss";
+
+$color1: #f5a3fc;
+$color2: #861c90;
+$color3: #861c90;
+
+
+body {
+    background: $color2;
+    font-size: 14px;
+    height:100%;
+    .header {
+        background: #fff;
+        margin:0;
+        border-bottom:2px solid $color2;
+        
+        .navbar-brand
+        {
+            color:$color2;
+            font-weight: bold;
+        }
+    }
+    
+    .main-view {
+        background: $color2;
+    }
+    .sidebar {
+        padding-top:20px;
+        
+        li {
+            border-bottom: 1px solid lighten($color2,4%);
+            &:hover, a:hover, a:visited, a:focus, &.active {
+                text-decoration: none;
+                background: darken($color2,10%);
+            }
+
+            &.divider {
+                height:3px;
+                margin:0;
+                padding:0;
+                border-bottom:0;
+                background:lighten($color2,4%);
+             }
+            
+        }
+       
+        .submenu {
+             position: relative;
+             padding: 5% 0;
+             margin-left: 15%;
+             display: none; 
+             
+             li {
+                 list-style: none;
+                 padding:0;
+                 
+                 a {
+                     width:100%;
+                     margin:0;
+                 }
+                &:hover, a:hover {
+                     text-decoration: none;
+                     background: darken($color2,10%);
+                 }
+             }
+        }
+        
+        a {
+            color:#fff;
+        }
+    }
+    .display {
+        background: #fff;
+        padding-bottom: 10px;
+        min-height:540px;
+        
+        @media (min-width: 1400px){
+            min-height:700px;
+        }
+        
+        .display-title {
+            color:$color2;
+            font-weight: bold;
+        }
+        
+        .tile {
+            padding:8px;
+            margin:4px;
+        }
+        
+        
+        .nav .active {
+            &, a {
+                background: #fff !important;
+                color:$color2;
+                border-left: 2px solid $color2;
+            }
+        }
+        .nav .active-add {
+            -webkit-transition: 0.5s linear all;
+            opacity: 0;
+        }
+        .nav .active-add-active {
+            opacity: 1;
+        }
+        
+        .message-table {
+            border:2px solid #efefef;
+            font-size:13px;
+            
+            tr {
+                padding: 10px;
+                border-bottom:1px solid #efefef;
+                
+                &:hover {
+                    background: #efefef;
+                }
+                
+                td:nth-child(2) {
+                    width:60%;
+                }
+                
+            }
+        }
+        
+        .message-view {
+            position:absolute;
+            background: #fff;
+            padding:10px;
+        }
+        .fill-parent {
+            min-height: 100%;
+            min-width: 100%;
+        }
+        
+        .img-passport {
+            max-height: 150px;
+        }
+        
+        .events-table {
+            tr td.active {
+                background: lighten(green,70%);
+                font-weight: bold;
+                -webkit-transition: linear all 0.2s;
+                
+                &:hover {
+                    background:lighten(green,65%);
+                }
+            }
+            
+            .info {
+                color: #fff;
+            }
+        }
+    }
+    
+    .panel {
+        padding:0;
+    }
+    .panel-black {
+
+        .panel-heading {
+            background: #000;
+            color: #ffffff;
+        }
+    }
+    
+    /* Buttons */
+    table .btn-sm{
+        padding:2px 5px;
+         i{
+            font-size:10px;
+         }
+        
+    }
+
+    .footer {
+        margin: 0;
+    }
+    
+    .login-form {
+        background: rgba(255,255,255,.7);
+    }
+    
+    .cursor-pointer:hover {
+        cursor:pointer;
+    }
+    
+    .hr-divider {
+        border-left: 3px solid #efefef;
+        min-height: 250px;
+        background-repeat: no-repeat;
+    }
+    
+     .vr-divider {
+        border-left: 3px solid #efefef;
+        min-width: 250px;
+        background-repeat: no-repeat;
+    }
+    
+    
+    .border-color1 {
+        border: 1px solid $color1;
+    }
+    
+    .border-color2 {
+        border: 1px solid $color2;
+    }
+    
+    .border-white {
+        border: 2px solid #fff;
+    }
+    
+    .bg-color2 {
+        background: $color2;
+    }
+    
+    
+    .color1 {
+        color:$color1;
+    }
+    
+    .color2 {
+        color:$color2;
+    }
+    
+    .footer {
+        @media (max-width:780px){
+            position:relative;
+        }
+        
+        p {
+            color:#fff;
+        }
+    }
+    
+    
+    .btn-cst {
+        background: $color2;
+        color:#fff;
+    }
+}
+

@@ -1,0 +1,6 @@
+<select class="form-control input-sm">
+	<option ng-repeat="record in records" ng-value="record[valueKey]">
+		{{record[displayKey]}}
+	</option>
+	<option value="all">ALL {{selection}}</option>
+</select>

@@ -1,0 +1,127 @@
+
+
+/* Text Sizes */
+$text-lg : 30px;
+$text-md : 18px;
+$text-sm : 12px;
+$text-xs : 8px;
+
+/* Paddings */
+$padding-lg : 35px;
+$padding-md : 25px;
+$padding-sm : 15px;
+$padding-xs : 8px;
+
+/* Mixins */
+@mixin media_padding($width,$size){
+    @media (max-width: #{$width}){
+        padding: $size;
+    }
+}
+
+
+/* Text Sizes */
+$text-size : 30px;
+$sub       : 12px;
+@each $member in text-lg,text-md,text-sm,text-xs {
+    .#{$member} {
+        font-size: $text-size;
+    }
+    $text-size : $text-size - $sub;
+    $sub       : $sub/2;
+}
+
+
+.no-padding {
+   padding: 0;
+}
+
+.padding-xs {
+    padding:8px;
+}
+
+.padding-sm {
+    padding:$padding-sm;
+    @media (max-width: 780px){
+        padding:8px;
+    }
+}
+
+.padding-md {
+    padding:$padding-md;
+    @include media_padding(780px,12px);
+}
+
+.padding-lg {
+    padding:$padding-lg;
+    @include media_padding(780px,16px);
+}
+
+.padding-xl {
+    padding:50px;
+     @include media_padding(780px,25px);
+}
+
+/* Backgrounds */
+.no-bg {
+    background: none;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.bg-grey {
+    background: #eeeeee;
+}
+
+/* Borders */
+.border-grey {
+    border: 1px solid #eeeeee;
+}
+
+/* Margins */
+.no-margin {
+    margin: 0;
+}
+.margin-auto {
+    margin: 0 auto;
+}
+.margin-top-md {
+    margin-top:20px;
+}
+
+.margin-top-lg {
+    margin-top:40px;
+}
+
+.margin-top-xxxl {
+    margin-top:100px;
+}
+
+
+.margin-bottom-md {
+    margin-bottom:20px;
+}
+
+.margin-bottom-lg {
+    margin-top:40px;
+}
+
+.margin-sm {
+    margin:20px;
+}
+
+.margin-top-sm {
+    margin-top:15px;
+}
+
+.margin-bottom-sm {
+    margin-bottom:10px;
+}
+
+
+/* Text Colors */
+.text-white {
+    color:#fff;
+}

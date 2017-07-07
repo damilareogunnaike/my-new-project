@@ -1,0 +1,30 @@
+<div class="login-page" ng-controller="ParentsLoginController">
+    <div class="container">
+        <div layout="row">
+            <div flex="30" flex-offset="35">
+
+                <div class="login-form-container">
+                    <h2>Login</h2>
+                    <div class="login-form">
+                        <form name="loginForm">
+                            <md-progress-linear ng-show="loading" md-mode="indeterminate"></md-progress-linear>
+                            <md-input-container class="input-field" layout="row">
+                                <label>Enter PIN</label>
+                                <input type="text" ng-model="loginData.pin" class="validate">
+                            </md-input-container>
+                            <md-input-container class="input-field" layout="row">
+                                <label>Enter Serial</label>
+                                <input type="text" ng-model="loginData.serial" class="validate">
+                            </md-input-container>
+                            <md-button class="md-raised md-primary" ng-click="getAccess()" ng-disabled="loading">Proceed</md-button>
+                        </form>
+                    </div>
+
+                    <div class="footer">
+                        <a href="#">Having issues?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

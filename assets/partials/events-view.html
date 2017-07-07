@@ -1,0 +1,28 @@
+
+<table class="table table-bordered table-responsive events-table">
+    <tr>
+        <th colspan="1">
+            <button ng-click="moveToPrev()" class="btn-block btn-info btn"><i class="fa fa-arrow-left"></i></button>
+        </th>
+        <th colspan="6" class="text-center">
+            <h4><span ng-bind="monthName"></span></h4>
+        </th>
+        <th colspan="1">
+            <button ng-click="moveToNext()" class="btn-block btn-info btn"><i class="fa fa-arrow-right"></i></button>
+        </th>
+    </tr>
+    <tr>
+        <th>Week</th>
+        <th class="text-center" ng-repeat="weekday in weekdays" ng-bind="weekday"></th>
+    </tr>
+    <tbody>
+        <tr ng-repeat="weeksdays in weekDayValues">
+            <td>Week {{$index + 1}}</td>
+            <td class=" text-center" ng-click="openEvents(day)" ng-class="{'active':day.events.length > 0,'cursor-pointer':day.events.length > 0,'info':day.is_today}" ng-repeat="day in weeksdays">
+                <strong ng-bind="day.date"></strong>
+                <br>
+                {{day.events.length > 0 ? day.events.length + " Event" + ((day.events.length > 1) ? 's' : '') : ""}}
+            </td>
+        </tr>
+    </tbody>
+</table>

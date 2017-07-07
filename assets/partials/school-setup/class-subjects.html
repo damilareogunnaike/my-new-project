@@ -1,0 +1,21 @@
+<div class="modal-header">
+	<h4>
+		<span ng-bind="classObj.class_name + ' - ' + (classSubjects.length) + ' subject(s)'"></span>
+		<i class="fa fa-times pull-right" ng-click="close()" style="cursor:pointer;"></i>
+	</h4>
+
+</div>
+<div class="modal-body">
+	<table class="table table-bordered table-condensed table-hover">
+		<tr ng-repeat="subject in classSubjects">
+			<td ng-bind="$index + 1"></td>
+			<td ng-bind="subject.subject_name"></td>
+			<td>
+				<button class="btn-sm btn-danger" ng-click="removeClassSubject(subject)">Remove</button>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-default btn-sm" ng-click="close()">Close</button>
+</div>

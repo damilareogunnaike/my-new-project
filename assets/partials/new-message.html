@@ -1,0 +1,30 @@
+<div class="new-message" ng-controller="MessageController">
+    <div class="panel panel-black">
+        <form name="newMessage">
+            <div class="panel-heading">
+                Compose Message
+                
+                <span class="pull-right" ng-show="loading">
+                    <i class="fa fa-spin fa-circle-o-notch"></i>
+                </span>
+            </div>
+            <div class="panel-body">
+                    <div class="form-group">
+                        <input class="form-control" type="text" ng-model="message.recipients" placeholder="Recipient">
+                        <p class="text-sm text-info">Enter ID of student, staff or admin</p>
+                    </div> 
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="message.subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group"> 
+                        <textarea class="form-control" ng-model="message.content" placeholder="Message"></textarea>
+                    </div>
+            </div>
+            <div class="panel-footer">
+                <button ng-click="sendMessage()" class="btn btn-primary">Send</button>
+                <button ng-click="saveDraft()" class="btn btn-info">Save Draft</button>
+                <button type="reset" class="btn btn-warning" ng-click="reset">Discard</button>
+            </div>
+        </form>
+    </div>
+</div>

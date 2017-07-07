@@ -1,0 +1,77 @@
+[20-Sep-2015 16:00:01 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/evangelm/public_html/school_ms/application/views/footer.php on line 8
+[23-Sep-2015 17:51:04 America/Chicago] PHP Fatal error:  Call to undefined method Parent_model::get_all_parents() in /home/evangelm/public_html/school_ms/application/controllers/admin.php on line 77
+[23-Sep-2015 17:52:27 America/Chicago] PHP Fatal error:  Call to undefined method Parent_model::get_all_parents() in /home/evangelm/public_html/school_ms/application/controllers/admin.php on line 77
+[23-Sep-2015 17:52:36 America/Chicago] PHP Fatal error:  Call to undefined method Parent_model::get_all_parents() in /home/evangelm/public_html/school_ms/application/controllers/admin.php on line 77
+[23-Sep-2015 17:52:44 America/Chicago] PHP Fatal error:  Call to undefined method Parent_model::get_all_parents() in /home/evangelm/public_html/school_ms/application/controllers/admin.php on line 77
+[25-Sep-2015 05:12:46 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/evangelm/public_html/school_ms/application/models/parent_model.php on line 173
+[25-Sep-2015 16:20:41 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 1
+[25-Sep-2015 16:21:19 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 1
+[25-Sep-2015 16:22:06 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 1
+[25-Sep-2015 16:22:10 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 1
+[25-Sep-2015 16:23:42 America/Chicago] PHP Parse error:  syntax error, unexpected 'which' (T_STRING), expecting '{' in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 3
+[25-Sep-2015 16:24:56 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:26:47 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:27:07 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:28:28 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:29:23 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:32:01 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:32:20 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:32:40 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:36:53 America/Chicago] PHP Fatal error:  Class 'School_MS' not found in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 4
+[25-Sep-2015 16:37:15 America/Chicago] PHP Fatal error:  Class 'School_MS' not found in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 4
+[25-Sep-2015 16:37:35 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:38:14 America/Chicago] PHP Parse error:  syntax error, unexpected 'parent' (T_STRING), expecting function (T_FUNCTION) in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 11
+[25-Sep-2015 16:39:14 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:39:24 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:39:47 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:40:01 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:40:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:41:26 America/Chicago] PHP Fatal error:  Call to undefined function php_info() in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 3
+[25-Sep-2015 16:41:46 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:42:30 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:42:54 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:42:56 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:42:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:44:39 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/finance_model.php on line 1
+[25-Sep-2015 16:48:17 America/Chicago] PHP Fatal error:  Call to undefined function php_info() in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 3
+[25-Sep-2015 17:39:54 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/evangelm/public_html/school_ms/application/models/student_model.php on line 1
+[01-Oct-2015 08:44:47 America/Chicago] PHP Fatal error:  Call to a member function get_all_students() on a non-object in /home/evangelm/public_html/school_ms/application/controllers/finance.php on line 83
+[11-Dec-2015 07:22:49 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/evangelm/public_html/school_ms/application/helpers/MY_string_helper.php on line 162
+[11-Dec-2015 07:22:52 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/evangelm/public_html/school_ms/application/helpers/MY_string_helper.php on line 162
+[11-Dec-2015 07:23:17 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/evangelm/public_html/school_ms/application/helpers/MY_string_helper.php on line 162
+[23-Mar-2016 19:47:49 America/Chicago] PHP Fatal error:  Call to undefined method School_setup_model::get_all_states() in /home/evangelm/public_html/school_ms/application/controllers/admin.php on line 61
+[24-Mar-2016 05:58:00 America/Chicago] PHP Parse error:  syntax error, unexpected 'start_average' (T_STRING), expecting ',' or ';' in /home/evangelm/public_html/school_ms/application/models/result_model.php on line 553
+[25-Nov-2016 13:36:06 America/Chicago] PHP Notice:  Use of undefined constant VIEWPATH - assumed 'VIEWPATH' in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 242
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(): Failed opening 'VIEWPATHerrors/html/error_php.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Notice:  Use of undefined constant VIEWPATH - assumed 'VIEWPATH' in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 242
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(): Failed opening 'VIEWPATHerrors/html/error_php.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Notice:  Use of undefined constant VIEWPATH - assumed 'VIEWPATH' in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 242
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(): Failed opening 'VIEWPATHerrors/html/error_php.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Notice:  Use of undefined constant VIEWPATH - assumed 'VIEWPATH' in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 242
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(): Failed opening 'VIEWPATHerrors/html/error_php.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Notice:  Use of undefined constant VIEWPATH - assumed 'VIEWPATH' in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 242
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(): Failed opening 'VIEWPATHerrors/html/error_php.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Notice:  Use of undefined constant VIEWPATH - assumed 'VIEWPATH' in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 242
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(): Failed opening 'VIEWPATHerrors/html/error_php.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Notice:  Use of undefined constant VIEWPATH - assumed 'VIEWPATH' in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 242
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(VIEWPATHerrors/html/error_php.php): failed to open stream: No such file or directory in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[25-Nov-2016 13:36:06 America/Chicago] PHP Warning:  include(): Failed opening 'VIEWPATHerrors/html/error_php.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/evangelm/public_html/school_ms/system/core/Exceptions.php on line 269
+[11-Dec-2016 13:31:29 America/Chicago] PHP Fatal error:  Cannot redeclare class School_MS in /home/evangelm/public_html/school_ms/application/controllers/School.php on line 131
+[11-Dec-2016 13:36:50 America/Chicago] PHP Fatal error:  Cannot redeclare class School_MS in /home/evangelm/public_html/school_ms/application/controllers/School.php on line 131
+[11-Dec-2016 13:37:49 America/Chicago] PHP Fatal error:  Cannot redeclare class School_MS in /home/evangelm/public_html/school_ms/application/controllers/School.php on line 131
+[11-Dec-2016 13:44:11 America/Chicago] PHP Fatal error:  Cannot redeclare class School_MS in /home/evangelm/public_html/school_ms/application/controllers/School.php on line 131
+[11-Dec-2016 13:53:51 America/Chicago] PHP Fatal error:  Class 'School_MS' not found in /home/evangelm/public_html/school_ms/application/controllers/Admin.php on line 7
+[21-Dec-2016 16:16:41 America/Chicago] PHP Fatal error:  Class 'School_MS' not found in /home/evangelm/public_html/school_ms/application/controllers/Admin.php on line 7

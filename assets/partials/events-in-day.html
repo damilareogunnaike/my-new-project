@@ -1,0 +1,49 @@
+<div class="modal-header bg-color2">
+    <h3 class="text-center text-white" ng-bind="day.date | sweetDate"></h3>
+</div>
+
+<div class="modal-body padding-sm">
+    <div class="row padding-xs">
+        <div class="col-md-6 padding-sm bg-grey" ng-repeat="event in day.events">
+            <div class="border-white bg-white">
+                <h4 ng-bind="event.title" class="color2 text-center"></h4>
+                <hr>
+                <p class="text-center" ng-bind="event.description"></p>
+                <table class="table">
+                    <tr>
+                        <td><i class="fa fa-calendar"></i> Start Date</td>
+                        <td ng-bind="event.start_date | sweetDate"></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-calendar"></i> End Date</td>
+                        <td ng-bind="event.end_date | sweetDate"></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i> Start Time</td>
+                        <td ng-bind="event.start_time | sweetTime"></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i> End Time</td>
+                        <td ng-bind="event.end_time | sweetTime"></td>
+                    </tr>
+                    <tr>
+                        <td>Recurring Event</td>
+                        <td ng-bind="event.is_recurring | isRecurring"></td>
+                    </tr>
+                    <tr ng-show="event.is_recurring == 1">
+                        <td>Recurring Duration</td>
+                        <td ng-bind="event.recurrence_period"></td>
+                    </tr>
+                    <tr ng-show="event.recurrence_period == 'Month'">
+                        <td>Recurring Date</td>
+                        <td  ng-bind="event.recurrence_date"></td>
+                    </tr>
+                    <tr ng-show="event.recurrence_period == 'Week'">
+                        <td>Day of Week</td>
+                        <td  ng-bind="event.recurrence_date | weekDay"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

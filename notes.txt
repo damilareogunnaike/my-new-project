@@ -1,0 +1,11 @@
+1. Change assign subject teacher function if not formerly properly implemented.
+As teacher is assigned to subject, class to be taught is also indicated...
+
+2. In fetching a subjects students, it's not put into consideration that not all classes offer the same
+subjects. So there should be a way of saying this class offers this subject, but when assigning subject teacher,
+you actually select the class and subject, so if a subject is not being offered by a class, you won't assign the
+ class teacher at first. So problem solved.
+
+
+3. Computing student position in class per subject, SUM function is giving me different values even for the same values
+in argument though in different columns.. then i ceiled to 2dp

@@ -1,0 +1,55 @@
+<div ng-controller="DashboardController">
+    <md-content>
+        <div layout="row">
+            <div flex="60" flex-offset="20">
+                <md-toolbar class="md-hue-2">
+                    <div class="md-toolbar-tools">
+                    </div>
+                </md-toolbar>
+                <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab label="Results">
+                        <md-content class="md-padding">
+                            <h1>Results</h1>
+
+                            <form>
+                                <div layout="row">
+                                    <div flex="33">
+                                        <md-input-container class="input-field" layout="row">
+                                            <label>Select Session</label>
+                                            <md-select ng-model="resultForm.session_id">
+                                                <md-option ng-repeat="record in schoolSessions" ng-value="record.school_session_id">
+                                                    {{record.school_session_name}}
+                                                </md-option>
+                                            </md-select>
+                                        </md-input-container>
+                                    </div>
+                                    <div flex="33">
+                                        <md-input-container class="input-field" layout="row">
+                                            <label>Select Term</label>
+                                            <md-select ng-model="resultForm.term_id">
+                                                <md-option ng-repeat="record in schoolTerms" ng-value="record.school_term_id">
+                                                    {{record.school_term_name}}
+                                                </md-option>
+                                            </md-select>
+                                        </md-input-container>
+                                    </div>
+                                    <div flex="33">
+                                        <md-button class="md-raised md-primary" ng-click="getResults()" ng-disabled="loading">Submit</md-button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </md-content>
+                    </md-tab>
+
+                    <md-tab label="Profile">
+                        <md-content class="md-padding">
+                            <h1>Profile</h1>
+                        </md-content>
+                    </md-tab>
+                </md-tabs>
+            </div>
+        </div>
+    </md-content>
+
+</div>

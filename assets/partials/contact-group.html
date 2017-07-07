@@ -1,0 +1,63 @@
+<div class="new-message">
+    <div class="panel panel-black">
+            <div class="panel-heading">
+                Contact Group
+            </div>
+            <div class="panel-body">
+                <div ng-show="!editMode">
+                    <form name="newMessage">
+                        <div class="form-group">
+                            <label class="control-label">Group Name</label>
+                            <input class="form-control" type="text" ng-model="group.name" placeholder="Group Name">
+                        </div> 
+                        <div class="form-group">
+                            <label class="control-label">Enter numbers</label>
+                            <textarea class="form-control" ng-model="group.numbers"></textarea>
+                            <span class="text-sm text-italics text-info">Comma or new line separated numbers</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Upload Numbers</label>
+                            <input type="file" class="btn btn-primary">
+                            <span class="text-sm text-italics text-info">File extension .txt</span>
+                        </div>
+                    </form>
+                    <div class="panel-footer">
+                          <button ng-click="saveGroup(group)" class="btn btn-primary">Save</button>
+                    </div>
+                
+                </div>
+              
+                <div ng-show="editMode">
+                    <h3 class="color2">{{group.name}} <span class="badge pull-right">{{group.numbers.split(',').length}}</span></h3>
+
+                    <table class="table table-condensed table-bordered">
+                        <thead>
+                            <th>S/N</th>
+                            <th>Number</th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="number in group.numbers.split(',') track by $index">
+                                <td>{{$index + 1}}</td>
+                                <td>{{number}}</td>
+                                <td ng-hide="group.editable == false"><button ng-click="removeNumber(number)" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   
+                    <div class="form-group" ng-hide="!group.editable">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                Add Number
+                            </span>
+                            <input type="text" class="form-control input"  ng-model="newNumber">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" ng-click="addNumber()">Add</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
