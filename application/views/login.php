@@ -38,4 +38,3 @@
 </div>
 
 <?php include("footer_files.php");?>
-<?php include("angular_files.php");?>

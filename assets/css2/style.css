@@ -11,7 +11,8 @@ body .login-page {
       background: white;
       padding: 20px; }
     body .login-page .login-form-container .footer {
-      padding-top: 10px; }
+      padding-top: 10px;
+      padding-left: 0; }
       body .login-page .login-form-container .footer a {
         color: #fff;
         font-size: 13px;

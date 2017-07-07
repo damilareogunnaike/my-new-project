@@ -82,6 +82,7 @@ $route['(.+)'] = function($url) {
 	};
 
 $route['default_controller'] = "ms_parent/login";
+//$route['default_controller'] = "index/login";
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
 

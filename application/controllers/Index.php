@@ -28,9 +28,8 @@ class Index extends CI_Controller {
 	}
         
         
-	function login($actor = "parent")
-	{	
-
+	function login($actor = "admin")
+	{
         $data = $this->input->post();
         $msg = "";
         if(isset($data['username']) && isset($data['password']) )
