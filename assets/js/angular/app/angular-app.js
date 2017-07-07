@@ -26,7 +26,8 @@ var BASE_URL = APP_BASE_URL;
 
 myApp.value("BASE_URL",BASE_URL);
 
-myApp.value("HOST",BASE_URL + "/index.php/api_v1/");
+var urlBase = BASE_URL.endsWith("/") ? BASE_URL : BASE_URL + "/";
+myApp.value("HOST", urlBase + "index.php/api_v1/");
 
 myApp.value("SCHOOL_INFO","");
 
