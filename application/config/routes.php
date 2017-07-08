@@ -58,15 +58,15 @@ $route['parent/(.+)'] = "ms_parent/$1";
 //$route['api/(.+)'] = "api/$1";
 $route['ms_parent/(.+)'] = "ms_parent/$1";
 $route['(.+)'] = function($url) {
-
+        $final_url = "";
 		$url_parts = explode("/", $url);
+		$endpoint_found = false;
 		if (sizeof($url_parts) > 0){
 			$ctrl_name = ucfirst($url_parts[0]) . ".php";
 			$ctrl_path = str_replace("\\","/",APPPATH) . "controllers/";
-
 			$file_path = $ctrl_path . $ctrl_name;
 			if(file_exists($file_path)) {
-				return $url;
+				$final_url = $url;
 			}
 
 			if(sizeof($url_parts) > 1) {
@@ -74,11 +74,14 @@ $route['(.+)'] = function($url) {
 				$ctrl_path = str_replace("\\","/",APPPATH) . "controllers/api/";
 				$file_path = $ctrl_path . $ctrl_name;
 				if(file_exists($file_path)) {
-					return $url;
+					$final_url = $url;
 				}
 			}
-			return "base/{$url}";
+			else if(!$endpoint_found) {
+                $final_url = "base/{$url}";
+            }
 		}
+        return $final_url;
 	};
 
 $route['default_controller'] = "ms_parent/login";

@@ -2098,3 +2098,91 @@ DEBUG - 2017-07-08 01:56:38 --> Myapp class already loaded. Second attempt ignor
 DEBUG - 2017-07-08 01:56:38 --> Myapp class already loaded. Second attempt ignored.
 DEBUG - 2017-07-08 01:56:38 --> Myapp class already loaded. Second attempt ignored.
 DEBUG - 2017-07-08 01:56:38 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:09:33 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:13:42 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:14:29 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:14:31 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:15:03 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:15:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-08 02:15:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-08 02:15:03 --> Session Class Initialized
+DEBUG - 2017-07-08 02:15:03 --> Session routines successfully run
+DEBUG - 2017-07-08 02:15:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-08 02:15:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:15:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:15:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:15:07 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:15:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-08 02:15:07 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-08 02:15:07 --> Session Class Initialized
+DEBUG - 2017-07-08 02:15:07 --> Session routines successfully run
+DEBUG - 2017-07-08 02:15:07 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-08 02:15:07 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:15:07 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:15:07 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:15:15 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:15:17 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:21:05 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:21:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2017-07-08 02:21:05 --> 404 Page Not Found: C:/xampp
+DEBUG - 2017-07-08 02:21:20 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:35:38 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:35:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-08 02:35:38 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-08 02:35:38 --> Session Class Initialized
+DEBUG - 2017-07-08 02:35:38 --> Session routines successfully run
+DEBUG - 2017-07-08 02:35:38 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-08 02:35:38 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:35:38 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:35:38 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:37:09 --> UTF-8 Support Enabled
+DEBUG - 2017-07-08 02:37:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-08 02:37:09 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-08 02:37:09 --> Session Class Initialized
+DEBUG - 2017-07-08 02:37:09 --> Session routines successfully run
+DEBUG - 2017-07-08 02:37:09 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-08 02:37:09 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:37:09 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-08 02:37:09 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameReflower\Block.php 781
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 175
+ERROR - 2017-07-08 02:37:10 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 239
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\Frame.php 566
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameReflower\Block.php 781
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 175
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 239
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\Frame.php 566
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameReflower\Block.php 781
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 175
+ERROR - 2017-07-08 02:37:11 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 239
+ERROR - 2017-07-08 02:37:12 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\Frame.php 566
