@@ -98,7 +98,6 @@ ParentsModule.controller("DashboardController", ["$rootScope","$scope","$cookies
 
     var cookieData =  $cookies.getObject("student_info");
     var students = cookieData.students;
-    console.log(cookieData);
     if(students && students.length > 1){
     }
     else {
@@ -142,6 +141,8 @@ ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state",
                     $scope.loading = false;
                     console.log("error occurred");
                 }
+            }, function(error){
+                $scope.loading = false;
             });
         };
 
@@ -159,7 +160,6 @@ ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state",
                 $scope.loading = false;
                 if(response.success){
                     $scope.result = response.data;
-                    console.log($scope.result);
                 }
             }, function(response){
                 $scope.loading = false;

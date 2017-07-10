@@ -67,6 +67,7 @@ $route['(.+)'] = function($url) {
 			$file_path = $ctrl_path . $ctrl_name;
 			if(file_exists($file_path)) {
 				$final_url = $url;
+				$endpoint_found = true;
 			}
 
 			if(sizeof($url_parts) > 1) {
