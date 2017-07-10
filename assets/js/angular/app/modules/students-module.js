@@ -1,26 +1,26 @@
 var studentsModule = angular.module("StudentsModule",[
-    'ngLahray',
+    'ngLahray'
 ]);
 
 studentsModule.factory("STUDENT_ENDPOINTS", function(BASE_URL){
 	BASE_URL = BASE_URL.endsWith("/") ? BASE_URL  : BASE_URL + "/";
 
-	HOST = BASE_URL + "index.php/api/students/"
+	HOST = BASE_URL + "index.php/api/students/";
 	return {
+        GET           : HOST + "",
 		GET_ALL       : HOST + "find_all/",
 		SEARCH        : HOST + "search",
-		GET           : HOST + "find/",
 		UPDATE        : HOST + "update/",
 		ADD           : HOST + "add",
 		UPDATE_CLASS  : HOST + "update_class"
 	}
-})
+});
 
 
 studentsModule.factory("STUDENT_PARTIALS", function(BASE_URL){
 	BASE_URL = BASE_URL.endsWith("/") ? BASE_URL  : BASE_URL + "/";
 
-	PATH = BASE_URL + "assets/partials/student/"
+	PATH = BASE_URL + "assets/partials/student/";
 	return {
 		SEARCH    : PATH + "search-student.html"
 	}
@@ -102,7 +102,7 @@ studentsModule.service("StudentsService", ["WebService",'STUDENT_ENDPOINTS',
 
 
 		this.get = function(studentId){
-			return WebService.get(STUDENT_ENDPOINTS.GET, {"studentId": studentId});
+			return WebService.get(STUDENT_ENDPOINTS.GET, {"id": studentId});
 		};
 
 

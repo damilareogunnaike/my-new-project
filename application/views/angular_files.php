@@ -7,6 +7,7 @@
 <script src="<?=base_url("assets/js/angular/angular-ui-router.js");?>"></script>
 <script src="<?=base_url("assets/js/angular/angular-aria.min.js");?>"></script>
 <script src="<?=base_url("assets/node_modules/angular-material/angular-material.min.js");?>"></script>
+<script src="<?=base_url("assets/node_modules/angular-material-data-table/dist/md-data-table.js");?>"></script>
 <script src="<?=base_url("assets/js/angular/angular-sanitize.min.js");?>"></script>
 <script src="<?=base_url("assets/js/angular/angular-resource.min.js");?>"></script>
 <script src="<?=base_url("assets/js/angular/ui-bootstrap-1.3.1.min.js");?>"></script>

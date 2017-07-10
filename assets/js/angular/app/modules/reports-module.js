@@ -11,20 +11,21 @@ var ReportsModule = angular.module("ReportsModule",[
 ReportsModule.factory("REPORTS_ENDPOINTS", function(BASE_URL){
     BASE_URL = BASE_URL.endsWith("/") ? BASE_URL  : BASE_URL + "/";
 
-    HOST = BASE_URL + "index.php/api/reports/"
+    HOST = BASE_URL + "index.php/api/reports/";
     return {
         CLASS_REPORT : HOST + "class_report",
+        STUDENT_REPORT : HOST + "student_report"
     }
-})
+});
 
 
 ReportsModule.factory("REPORTS_PARTIALS", function(BASE_URL){
     BASE_URL = BASE_URL.endsWith("/") ? BASE_URL  : BASE_URL + "/";
 
-    PATH = BASE_URL + "assets/partials/reports/"
+    PATH = BASE_URL + "assets/partials/reports/";
     return {
     }
-})
+});
 
 
 
@@ -35,7 +36,7 @@ ReportsModule.controller("ReportsCtrl",["$scope","$rootScope", 'ReportsService',
             $scope.loading = true;
 
 
-            $scope.classReportData = {data: [], msg : ''}
+            $scope.classReportData = {data: [], msg : ''};
 
             ReportsService.getClassReport($scope.classReport, function(response){
                 console.log(response);
@@ -63,7 +64,10 @@ ReportsModule.service("ReportsService", ["WebService",'REPORTS_ENDPOINTS',
             }, function(error){
                 errorFunc(error);
             })
+        };
+
+        this.getStudentsReport = function(studentId){
+            return WebService.get(REPORTS_ENDPOINTS.STUDENT_REPORT, {student_id: studentId});
         }
 
-
-    }])
+    }]);

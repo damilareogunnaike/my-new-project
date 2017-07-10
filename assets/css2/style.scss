@@ -1,12 +1,20 @@
-$color1: #861c90;
+$color1: rgb(63,81,181);
 $color2: #861c90;
 $color3: #f5a3fc;
 
+html {
+  background: #eff0f2;
+}
+
 body {
+
+  background: none;
+
   .login-page {
     height: 100%;
     width: 100%;
     background: $color1;
+
 
     .login-form-container {
       margin-top: 100px;
@@ -32,4 +40,20 @@ body {
       }
     }
   }
+
+
+  .student-view {
+    margin-bottom: 50px;
+
+    .img-container {
+      max-height: 200px;
+      overflow: hidden;
+    }
+    .student-img {
+      max-width:100%;
+      height: auto;
+    }
+
+  }
+
 }

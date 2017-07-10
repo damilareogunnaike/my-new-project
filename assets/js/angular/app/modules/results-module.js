@@ -1,7 +1,3 @@
-/**
-Base Template for Creating Modules.. 
-To use, rename ResultsModule to desiredModule name and add necessary code..
-*/
 
 var ResultsModule = angular.module("ResultsModule",[
     'ngLahray'
@@ -77,7 +73,7 @@ ResultsModule.controller("ResultsCtrl",["$scope","$rootScope", 'ResultsService',
 			}).finally(function(){
 				$scope.loading = false;
 			});
-		}
+		};
 
 
 		$scope.classSubjects = [];
@@ -117,7 +113,7 @@ ResultsModule.controller("ResultsCtrl",["$scope","$rootScope", 'ResultsService',
 				$scope.loading = false;
 				console.log(error);
 			})
-		}
+		};
 
 
 		$scope.updateClassSubjectScores = function(){

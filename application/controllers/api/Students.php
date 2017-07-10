@@ -22,7 +22,15 @@ class Students extends Rest_Ctrl {
     
 
     function index_get(){
-        echo "Hello world";
+        $req_data = $this->input->get();
+        if(!isset($req_data['id']) || $req_data['id'] == ""){
+            $this->response("Resource not found", 404);
+        }
+
+        $student_id = $req_data['id'];
+
+        $student_profile = $this->Students->get($student_id);
+        $this->response(rest_success($student_profile));
     }
 
 
@@ -48,14 +56,11 @@ class Students extends Rest_Ctrl {
         $this->response(array("data"=>$students,"count"=>sizeof($students)));
     }
 
-
-
     public function update_class_put(){
         $req_obj = $this->_put_args;
         $response = $this->Students->update_class($req_obj['sessionId'], $req_obj['classId'], $req_obj['studentIds']);
         $this->response($response);
     }
-
 
     private function load_model($model, $model_name = null){
         $model_name = ($model_name == null) ? $model : $model_name;

@@ -25,7 +25,7 @@ class Parents extends ApiBase {
             $response['data']['primary']['token'] = $this->myjwt->encode($students[0]);
             $response['data']['students'] = [];
             foreach($students as $student){
-                $response['data']['students'] = [
+                $response['data']['students'][] = [
                     "student_name" => $student['student_name'],
                     "token" => $this->myjwt->encode($student)
                 ];
@@ -35,5 +35,10 @@ class Parents extends ApiBase {
         else {
             $this->response($data);
         }
+    }
+
+
+    public function student_result_get(){
+        $req_data = $this->input->get();
     }
 }

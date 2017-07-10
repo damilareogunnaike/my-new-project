@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 include_once("ApiBase.php");
 
-class Result_Pins extends ApiBase {
+class Result_pins extends ApiBase {
 
 	public function __construct() {
         parent::__construct();

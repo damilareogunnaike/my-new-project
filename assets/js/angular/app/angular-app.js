@@ -2,6 +2,7 @@ var myApp = angular.module("myApp",[
 	'ngRoute',
     'ngAnimate',
 	'ngMaterial',
+	'md.data.table',
 	'ui.router',
     'ngCookies',
     'ngLahray',

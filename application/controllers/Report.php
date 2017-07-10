@@ -14,49 +14,51 @@
         {
             redirect();
         }
-        
-         $this->load->model('Student_model','Student');
-         $this->load->model('School_setup_model','School_setup');
-         $this->load->model('Result_model','Result');
-         $this->load->model("Reports_model", "Reports");
-         $this->load->model('classes_model','Classes');
-         $this->load->model("SubjectSettings_model", "SubjectSettings");
+
+        $this->load->model('Student_model','Student');
+        $this->load->model('School_setup_model','School_setup');
+        $this->load->model('Result_model','Result');
+        $this->load->model("Reports_model", "Reports");
+        $this->load->model('classes_model','Classes');
+        $this->load->model("SubjectSettings_model", "SubjectSettings");
      }
 
+     function get_result_data($student_id, $session_id, $term_id){
+
+         $student = $this->Student->get_student($student_id, $session_id);
+         $class = $this->Student->get_class_for_student($student_id, $session_id);
+         $class_id = $class['class_id'];
+
+         $student_subjects = $this->SubjectSettings->get_student_subjects($student_id, $session_id, $class_id);
+
+         $subject_scores = $this->Reports->get_students_subject_report($session_id, $term_id, $class_id, $student_id, $student_subjects);
+         $student_report_overview = $this->Reports->get_students_report_overview($session_id, $term_id, $class_id, $student_id);
+         $class_report_overview = $this->Reports->get_class_report_overview($session_id, $term_id, $class_id);
+         $result_info = array("term"=>$this->School_setup->get_term_name($term_id));
+         $result_info['session'] = $this->School_setup->get_session_name($session_id);
+         $school_info = $this->School_setup->get_school_settings();
+
+         $page_data['student'] = $student;
+         $page_data['class'] = $class;
+         $page_data['subject_scores'] = $subject_scores;
+         $page_data['student_report_overview'] = $student_report_overview;
+         $page_data['class_report_overview'] = $class_report_overview;
+         $page_data['cog_skills_report'] = $this->Reports->get_cog_skills_report($student_id,$session_id,$term_id);
+         $page_data['result_info'] = $result_info;
+         $page_data['school_info'] = $school_info;
+
+         $page_data['result_display'] = $this->Result->get_student_data_display();
+     }
 
 
      function print_report($student_id, $session_id, $term_id){
 
-        $student = $this->Student->get_student($student_id, $session_id);
-        $class = $this->Student->get_class_for_student($student_id, $session_id);
-        $class_id = $class['class_id'];
+         $page_data = $this->get_result_data($student_id, $session_id, $term_id);
+         $class = $page_data['class'];
 
-        $student_subjects = $this->SubjectSettings->get_student_subjects($student_id, $session_id, $class_id);
-        
-
-        $subject_scores = $this->Reports->get_students_subject_report($session_id, $term_id, $class_id, $student_id, $student_subjects);
-        $student_report_overview = $this->Reports->get_students_report_overview($session_id, $term_id, $class_id, $student_id);
-        $class_report_overview = $this->Reports->get_class_report_overview($session_id, $term_id, $class_id);
-        $result_info = array("term"=>$this->School_setup->get_term_name($term_id));
-        $result_info['session'] = $this->School_setup->get_session_name($session_id);
-        $school_info = $this->School_setup->get_school_settings();
-
-        $page_data['student'] = $student;
-        $page_data['class'] = $class;
-        $page_data['subject_scores'] = $subject_scores;
-        $page_data['student_report_overview'] = $student_report_overview;
-        $page_data['class_report_overview'] = $class_report_overview;
-        $page_data['cog_skills_report'] = $this->Reports->get_cog_skills_report($student_id,$session_id,$term_id);
-        $page_data['result_info'] = $result_info;
-        $page_data['school_info'] = $school_info;
-
-
-        $page_data['result_display'] = $this->Result->get_student_data_display();
-
-
-        $report_page = strtolower($class['report_sheet_view']);
-        $this->load->view('results/header_content',$page_data);
-        $this->load->view("results/sheets/{$report_page}");
+         $report_page = strtolower($class['report_sheet_view']);
+         $this->load->view('results/header_content',$page_data);
+         $this->load->view("results/sheets/{$report_page}");
         
         /*
         //$html = $this->load->view("results/sheets/test", $page_data, true);
@@ -69,9 +71,7 @@
         }
         */
 
-
      }
-     
 
      //Deprecated Method...
      function print_report_depr($student_id = NULL,$session_id = NULL,$term_id = NULL)

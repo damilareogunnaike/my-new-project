@@ -19,7 +19,8 @@ ParentsModule.factory("ENDPOINTS", function(BASE_URL){
 
     HOST = BASE_URL + "index.php/api/parents/";
     return {
-        LOGIN : HOST + "access_token"
+        LOGIN : HOST + "access_token",
+        STUDENT_RESULT: HOST + "student_result"
     }
 });
 
@@ -29,6 +30,7 @@ ParentsModule.factory("PARTIALS", function(){
     PATH = BASE_URL + "assets/partials/parents/";
     return {
         DASHBOARD : PATH + 'dashboard.html',
+        STUDENT : PATH + 'student-view.html',
         LOGIN     : PATH + 'login.html'
     }
 });
@@ -36,9 +38,14 @@ ParentsModule.factory("PARTIALS", function(){
 
 ParentsModule.config(function($stateProvider, $urlRouterProvider, PARTIALSProvider) {
     $stateProvider
-        .state('dashboard',{
-            url : '/dashboard',
+        .state('index',{
+            url : '/index',
             templateUrl : PARTIALSProvider.$get().DASHBOARD
+        })
+        .state('student',{
+            parent: 'index',
+            url : '/student',
+            templateUrl : PARTIALSProvider.$get().STUDENT
         })
         .state('login',{
             url: '/login',
@@ -50,8 +57,8 @@ ParentsModule.config(function($stateProvider, $urlRouterProvider, PARTIALSProvid
 });
 
 
-ParentsModule.controller("ParentsLoginController",["$scope","$rootScope", 'ParentsLoginService','$mdToast','$cookieStore','$state',
-    function($scope, $rootScope, ParentsLoginService, $mdToast, $cookieStore, $state){
+ParentsModule.controller("ParentsLoginController",["$scope","$rootScope", 'ParentsLoginService','$mdToast','$cookies','$state',
+    function($scope, $rootScope, ParentsLoginService, $mdToast, $cookies, $state){
 
         $scope.loading = false;
 
@@ -65,8 +72,8 @@ ParentsModule.controller("ParentsLoginController",["$scope","$rootScope", 'Paren
             ParentsLoginService.getAccess($scope.loginData).then(function(response){
                 $scope.loading = false;
                 if(response.success) {
-                    $cookieStore.put('student_info', response.data);
-                    $state.go('dashboard');
+                    $cookies.putObject('student_info', response.data);
+                    $state.go('index');
                 }
                 else {
                     $scope.showToastMessage(response.msg);
@@ -77,7 +84,6 @@ ParentsModule.controller("ParentsLoginController",["$scope","$rootScope", 'Paren
             })
         };
 
-
         $scope.showToastMessage = function(msg){
             var toast = $mdToast.simple()
                 .textContent(msg);
@@ -87,41 +93,90 @@ ParentsModule.controller("ParentsLoginController",["$scope","$rootScope", 'Paren
     }]);
 
 
-ParentsModule.controller("DashboardController", ["$scope","$cookieStore","SessionsService","ClassesService","TermsService",
-    function($scope, $cookieStore, SessionsService, ClassesService, TermsService){
+ParentsModule.controller("DashboardController", ["$rootScope","$scope","$cookies","SessionsService","ClassesService","TermsService","$state",
+    function($rootScope,$scope, $cookies, SessionsService, ClassesService, TermsService, $state){
 
-    var cookieData =  $cookieStore.get("student_info");
+    var cookieData =  $cookies.getObject("student_info");
+    var students = cookieData.students;
+    console.log(cookieData);
+    if(students && students.length > 1){
+    }
+    else {
+        $rootScope.currentStudent = cookieData.primary;
+        $state.go('student');
+    }
+
     $scope.selected = cookieData.primary;
     $scope.students = cookieData.students;
 
-    $scope.resultForm = {
-        session_id:'',
-        term_id : '',
-        class_id : ''
+    $scope.logout = function(){
+        $cookies.remove();
+        $state.go('login');
     };
-
-    $scope.schoolSessions = [];
-    $scope.schoolTerms = [];
-    $scope.schoolClasses = [];
-
-    SessionsService.getAll(function(response){
-        $scope.schoolSessions = response.data;
-    });
-
-    ClassesService.getAll(function(response){
-        $scope.schoolClasses = response.data;
-    });
-
-    TermsService.getAll(function(response){
-        $scope.schoolTerms = response.data;
-    });
-
-
-    $scope.getResults = function () {
-        console.log($scope.resultForm);
-    }
-
 }]);
+
+
+ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state","StudentsService","ReportsService",
+    function($rootScope, $scope, $state, StudentsService, ReportsService){
+
+        $scope.loading = false;
+
+        $scope.studentData = {
+            id : '',
+            'name' : ''
+        };
+        $scope.studentData = $rootScope.currentStudent;
+
+        $scope.getStudentsProfile = function(){
+            $scope.loading = true;
+            StudentsService.get($scope.studentData.student_id).then(function(response) {
+                $scope.loading = false;
+                if(response.success){
+                    $scope.studentData.student_name = response.data.student_name;
+                    $scope.studentData.class_name = response.data.class.class_name;
+                    $scope.studentData.image = response.data.image;
+                    $scope.studentData.gender = response.data.gender;
+                    $scope.loading = true;
+                }
+                else {
+                    $scope.loading = false;
+                    console.log("error occurred");
+                }
+            });
+        };
+
+        $scope.getStudentsProfile();
+
+        $scope.result = {};
+        $scope.getResults = function(){
+            $scope.loading = true;
+            var req = {
+                student_id : $scope.studentData.student_id,
+                token : $scope.studentData.token
+            };
+
+            ReportsService.getStudentsReport($scope.studentData.student_id).then(function(response){
+                $scope.loading = false;
+                if(response.success){
+                    $scope.result = response.data;
+                    console.log($scope.result);
+                }
+            }, function(response){
+                $scope.loading = false;
+                console.log("error occurred");
+            })
+        };
+        $scope.getResults();
+
+        $scope.getDefaultImage = function () {
+            var image = "";
+            if($scope.studentData.gender){
+                var gender = $scope.studentData.gender.toLowerCase();
+                image = "uploads/students/default-" + gender + ".png";
+            }
+            return image;
+        };
+    }]);
 
 
 ParentsModule.service("ParentsLoginService", ["WebService",'ENDPOINTS',
@@ -130,5 +185,4 @@ ParentsModule.service("ParentsLoginService", ["WebService",'ENDPOINTS',
         this.getAccess = function(data, successFunc, errorFunc) {
             return WebService.get(ENDPOINTS.LOGIN, data);
         }
-
     }]);

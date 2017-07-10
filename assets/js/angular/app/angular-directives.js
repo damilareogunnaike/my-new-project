@@ -25,11 +25,22 @@ myApp.directive("schoolInfo",['$rootScope','APP_ENDPOINTS',function($rootScope,A
         link     : function(scope,elem,attrs){
             $rootScope.$on("SCHOOL_INFO_RETREIVED",function(sender,args){
                 $rootScope.schoolInfo = args;
-                elem.val($rootScope.schoolInfo[attrs.schoolInfo]);
+                var param = attrs.schoolInfo;
+                if(!$rootScope.schoolInfo.hasOwnProperty(param)){
+                    //Attempt appending the prefix 'school' as it might not have been set.
+                    param = "school_" + param;
+                }
+                var value = $rootScope.schoolInfo[param];
+                if(attrs.property){
+                    elem.prop(attrs.property, value);
+                }
+                else {
+                    elem.val(value);
+                }
             });
         }
     }
-}])
+}]);
 
 
 

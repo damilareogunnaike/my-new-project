@@ -1,21 +1,34 @@
-body .login-page {
-  height: 100%;
-  width: 100%;
-  background: #861c90; }
-  body .login-page .login-form-container {
-    margin-top: 100px; }
-    body .login-page .login-form-container h2 {
-      color: #fff;
-      text-align: center; }
-    body .login-page .login-form-container .login-form {
-      background: white;
-      padding: 20px; }
-    body .login-page .login-form-container .footer {
-      padding-top: 10px;
-      padding-left: 0; }
-      body .login-page .login-form-container .footer a {
+html {
+  background: #eff0f2; }
+
+body {
+  background: none; }
+  body .login-page {
+    height: 100%;
+    width: 100%;
+    background: #3f51b5; }
+    body .login-page .login-form-container {
+      margin-top: 100px; }
+      body .login-page .login-form-container h2 {
         color: #fff;
-        font-size: 13px;
-        text-decoration: none; }
+        text-align: center; }
+      body .login-page .login-form-container .login-form {
+        background: white;
+        padding: 20px; }
+      body .login-page .login-form-container .footer {
+        padding-top: 10px;
+        padding-left: 0; }
+        body .login-page .login-form-container .footer a {
+          color: #fff;
+          font-size: 13px;
+          text-decoration: none; }
+  body .student-view {
+    margin-bottom: 50px; }
+    body .student-view .img-container {
+      max-height: 200px;
+      overflow: hidden; }
+    body .student-view .student-img {
+      max-width: 100%;
+      height: auto; }
 
 /*# sourceMappingURL=style.css.map */

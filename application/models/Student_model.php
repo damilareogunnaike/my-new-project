@@ -22,7 +22,7 @@ class Student_model extends Crud_model
         $this->CI->load->model("SubjectSettings_model", "SubjectSettings");
 
     }  
-    
+
 
     function add_student($data, $current_session_id)
     {
@@ -199,6 +199,15 @@ class Student_model extends Crud_model
 
 
     /* NEW METHODS --- GRADUALLY REPLACING ALL METHODS */
+
+    /**
+     * Returns basic details about a student such as
+     * name, class
+     * @param $student_id
+     */
+    function get($student_id){
+        return $this->get_student($student_id);
+    }
 
     function search($keyword, $page_no, $page_size){
         
