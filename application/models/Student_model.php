@@ -260,7 +260,7 @@ class Student_model extends Crud_model
 
 
     public function get_students_by_class_and_session($class_id, $session_id){
-        $sql = "SELECT b.*, b.id AS student_id FROM students_class a, student_biodata b WHERE a.school_session_id = {$session_id} "
+        $sql = "SELECT b.*, b.id AS student_id, CONCAT(b.surname, ' ', b.first_name, ' ', b.middle_name) AS student_name FROM students_class a, student_biodata b WHERE a.school_session_id = {$session_id} "
             . "AND a.class_id = {$class_id} AND a.student_id = b.id GROUP BY b.id ORDER BY b.surname ASC, b.middle_name ASC, b.first_name ASC";
         $students = $this->_query($sql);
         return $students;

@@ -8889,3 +8889,103 @@ DEBUG - 2017-07-10 04:43:21 --> Myapp class already loaded. Second attempt ignor
 DEBUG - 2017-07-10 04:43:21 --> Session routines successfully run
 DEBUG - 2017-07-10 04:43:21 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
 DEBUG - 2017-07-10 04:43:21 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:32:04 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:32:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:32:04 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:32:04 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:32:04 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:32:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:32:04 --> Session Class Initialized
+ERROR - 2017-07-10 09:32:04 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 09:32:04 --> Session routines successfully run
+DEBUG - 2017-07-10 09:32:05 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:32:05 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:32:05 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:32:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:32:05 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:32:05 --> Session Class Initialized
+ERROR - 2017-07-10 09:32:05 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 09:32:05 --> Session routines successfully run
+DEBUG - 2017-07-10 09:32:05 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:32:05 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:32:06 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:32:06 --> Session Class Initialized
+ERROR - 2017-07-10 09:32:06 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 09:32:06 --> Session routines successfully run
+DEBUG - 2017-07-10 09:32:06 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:32:06 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:32:50 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:32:50 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:32:50 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:32:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:32:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:32:50 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:32:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:32:51 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:32:51 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:32:51 --> Session Class Initialized
+ERROR - 2017-07-10 09:32:51 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 09:32:51 --> Session Class Initialized
+DEBUG - 2017-07-10 09:32:51 --> Session routines successfully run
+ERROR - 2017-07-10 09:32:51 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 09:32:51 --> Session Class Initialized
+ERROR - 2017-07-10 09:32:51 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 09:32:51 --> Session routines successfully run
+DEBUG - 2017-07-10 09:32:51 --> Session routines successfully run
+DEBUG - 2017-07-10 09:32:51 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:32:51 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:32:51 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:32:51 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:32:52 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:32:52 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:32:52 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:33:07 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:33:07 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:33:07 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 09:33:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:33:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:33:07 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:33:07 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:33:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 09:33:08 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 09:33:08 --> Session Class Initialized
+DEBUG - 2017-07-10 09:33:08 --> Session Class Initialized
+ERROR - 2017-07-10 09:33:08 --> Session: The session cookie was not signed.
+ERROR - 2017-07-10 09:33:08 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 09:33:08 --> Session routines successfully run
+DEBUG - 2017-07-10 09:33:08 --> Session Class Initialized
+DEBUG - 2017-07-10 09:33:08 --> Session routines successfully run
+DEBUG - 2017-07-10 09:33:08 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:33:08 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:33:08 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:33:08 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-10 09:33:08 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 09:33:08 --> Session routines successfully run
+DEBUG - 2017-07-10 09:33:08 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 09:33:09 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 09:33:09 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 15:01:40 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 15:01:40 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 15:01:40 --> UTF-8 Support Enabled
+DEBUG - 2017-07-10 15:01:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 15:01:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 15:01:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-10 15:01:42 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 15:01:42 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 15:01:42 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-10 15:01:45 --> Session Class Initialized
+DEBUG - 2017-07-10 15:01:45 --> Session Class Initialized
+ERROR - 2017-07-10 15:01:45 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 15:01:45 --> Session routines successfully run
+DEBUG - 2017-07-10 15:01:45 --> Session Class Initialized
+ERROR - 2017-07-10 15:01:45 --> Session: The session cookie was not signed.
+ERROR - 2017-07-10 15:01:45 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-10 15:01:45 --> Session routines successfully run
+DEBUG - 2017-07-10 15:01:45 --> Session routines successfully run
+DEBUG - 2017-07-10 15:01:46 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 15:01:46 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 15:01:46 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-10 15:01:47 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 15:01:47 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 15:01:47 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-10 15:01:47 --> Myapp class already loaded. Second attempt ignored.

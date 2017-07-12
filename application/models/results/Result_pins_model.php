@@ -79,12 +79,11 @@ class Result_pins_model extends Crud_model {
 
 		foreach($students as $student){
 			$student_id = $student['id'];
-			$student_name = $student['surname'];
+			$student_name = $student['student_name'];
 			$key = $this->generate_pin($student_id, $student_name);
 			$record['serial'] = $key['serial'];
 			$record['pin'] = $key['pin'];
 			$record['student_id'] = $student['id'];
-
 			$data[] = $record;
 		}
 
@@ -94,8 +93,12 @@ class Result_pins_model extends Crud_model {
 
 
 	private function generate_pin($student_id, $student_name){
-		$pin =  mt_rand(0, 1000000);
-		$serial = mt_rand(0, 1000000);
+        $student_id = str_pad($student_id, 5, "0", STR_PAD_LEFT);
+        $names = explode(" ", $student_name);
+        $prefix = substr($names[0], 0,1) . substr($names[1],0,1);
+		$pin = strtoupper(substr(bin2hex(openssl_random_pseudo_bytes(10)), 0, 10));
+		$pin = $prefix . $pin;
+		$serial = $prefix . $student_id;
 		return array("serial"=>$serial,"pin"=>$pin);
 	}
 
