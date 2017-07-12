@@ -1356,3 +1356,969 @@ DEBUG - 2017-07-12 03:12:26 --> Config file loaded: C:\xampp\htdocs\school_ms\ap
 DEBUG - 2017-07-12 03:12:26 --> Myapp class already loaded. Second attempt ignored.
 DEBUG - 2017-07-12 03:12:26 --> Myapp class already loaded. Second attempt ignored.
 DEBUG - 2017-07-12 03:12:26 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:24 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:24 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:24 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:24 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:24 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:24 --> Total execution time: 0.1332
+DEBUG - 2017-07-12 03:44:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:25 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:25 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:25 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:25 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:25 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:25 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:25 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:25 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:25 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:25 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:27 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:27 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:27 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:27 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:27 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:27 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:27 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:27 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:36 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:36 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:36 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:36 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:36 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:36 --> Total execution time: 0.1701
+DEBUG - 2017-07-12 03:44:37 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:37 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:37 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:37 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:37 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:37 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:37 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:37 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:37 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:37 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:37 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:37 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:37 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:37 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:37 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:40 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:44:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:44:40 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:44:40 --> Session Class Initialized
+DEBUG - 2017-07-12 03:44:40 --> Session routines successfully run
+DEBUG - 2017-07-12 03:44:40 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:44:40 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:40 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:44:40 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:11 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:55:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:55:11 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:55:11 --> Session Class Initialized
+DEBUG - 2017-07-12 03:55:11 --> Session routines successfully run
+DEBUG - 2017-07-12 03:55:11 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:11 --> Total execution time: 0.1459
+DEBUG - 2017-07-12 03:55:12 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:55:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:55:12 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:55:12 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:55:12 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:55:12 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:55:12 --> Session Class Initialized
+DEBUG - 2017-07-12 03:55:12 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:55:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:55:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:55:12 --> Session routines successfully run
+DEBUG - 2017-07-12 03:55:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:55:12 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:55:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:55:12 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:55:12 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:55:12 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:55:12 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:55:12 --> Session Class Initialized
+DEBUG - 2017-07-12 03:55:12 --> Session Class Initialized
+DEBUG - 2017-07-12 03:55:12 --> Session routines successfully run
+DEBUG - 2017-07-12 03:55:12 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:12 --> Session Class Initialized
+DEBUG - 2017-07-12 03:55:12 --> Session routines successfully run
+DEBUG - 2017-07-12 03:55:12 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:55:12 --> Session Class Initialized
+DEBUG - 2017-07-12 03:55:12 --> Session routines successfully run
+DEBUG - 2017-07-12 03:55:12 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:55:12 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:13 --> Session routines successfully run
+DEBUG - 2017-07-12 03:55:13 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:13 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:55:13 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:13 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:55:13 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:13 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:13 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:13 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:13 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:16 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:55:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:55:16 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:55:16 --> Session Class Initialized
+DEBUG - 2017-07-12 03:55:16 --> Session routines successfully run
+DEBUG - 2017-07-12 03:55:16 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:55:16 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:16 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:55:16 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameReflower\Block.php 781
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 175
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 239
+ERROR - 2017-07-12 03:55:18 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\Frame.php 566
+DEBUG - 2017-07-12 03:59:21 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:59:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:59:21 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:59:21 --> Session Class Initialized
+DEBUG - 2017-07-12 03:59:21 --> Session routines successfully run
+DEBUG - 2017-07-12 03:59:21 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:21 --> Total execution time: 0.1660
+DEBUG - 2017-07-12 03:59:22 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:59:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:59:22 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:59:22 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:59:22 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:59:22 --> Session Class Initialized
+DEBUG - 2017-07-12 03:59:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:59:22 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:59:22 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 03:59:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:59:22 --> Session routines successfully run
+DEBUG - 2017-07-12 03:59:22 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:59:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:59:22 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:59:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 03:59:22 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:59:22 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:59:22 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:22 --> Session Class Initialized
+DEBUG - 2017-07-12 03:59:22 --> Session Class Initialized
+DEBUG - 2017-07-12 03:59:22 --> Session Class Initialized
+DEBUG - 2017-07-12 03:59:22 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:22 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 03:59:22 --> Session routines successfully run
+DEBUG - 2017-07-12 03:59:22 --> Session routines successfully run
+DEBUG - 2017-07-12 03:59:22 --> Session routines successfully run
+DEBUG - 2017-07-12 03:59:22 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:59:22 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:59:23 --> Session Class Initialized
+DEBUG - 2017-07-12 03:59:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:23 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:59:23 --> Session routines successfully run
+DEBUG - 2017-07-12 03:59:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:23 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 03:59:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 03:59:26 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:15 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:00:16 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:00:16 --> Session Class Initialized
+DEBUG - 2017-07-12 04:00:16 --> Session routines successfully run
+DEBUG - 2017-07-12 04:00:16 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:16 --> Total execution time: 0.1662
+DEBUG - 2017-07-12 04:00:16 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:00:16 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:00:16 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:16 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:16 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:00:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:00:17 --> Session Class Initialized
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:00:17 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:00:17 --> Session routines successfully run
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:00:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:00:17 --> Session Class Initialized
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:00:17 --> Session routines successfully run
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:17 --> Session Class Initialized
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:00:17 --> Session Class Initialized
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:17 --> Session routines successfully run
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:17 --> Session routines successfully run
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:00:17 --> Session Class Initialized
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:17 --> Session routines successfully run
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:00:17 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:17 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:19 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:59 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:00:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:00:59 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:00:59 --> Session Class Initialized
+DEBUG - 2017-07-12 04:00:59 --> Session routines successfully run
+DEBUG - 2017-07-12 04:00:59 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:00:59 --> Total execution time: 0.1198
+DEBUG - 2017-07-12 04:01:00 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:00 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:00 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:00 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:00 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:00 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:00 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:00 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:00 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:00 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:00 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:00 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:00 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:00 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:00 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:04 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:24 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:24 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:24 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:24 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:24 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:24 --> Total execution time: 0.1382
+DEBUG - 2017-07-12 04:01:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:25 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:01:25 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:01:25 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:25 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:25 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:25 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:25 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:25 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:25 --> Session Class Initialized
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:25 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:25 --> Session routines successfully run
+DEBUG - 2017-07-12 04:01:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:25 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:01:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:25 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:26 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:26 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:26 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:01:28 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:02:55 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:02:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:02:55 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:02:55 --> Session Class Initialized
+DEBUG - 2017-07-12 04:02:55 --> Session routines successfully run
+DEBUG - 2017-07-12 04:02:55 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:55 --> Total execution time: 0.1839
+DEBUG - 2017-07-12 04:02:56 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:02:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:02:56 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:02:56 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:02:56 --> Session Class Initialized
+DEBUG - 2017-07-12 04:02:56 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:02:56 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:02:56 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:02:56 --> Session routines successfully run
+DEBUG - 2017-07-12 04:02:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:02:56 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:02:56 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:56 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:56 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:02:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:02:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:02:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:02:56 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:02:56 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:02:56 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:02:57 --> Session Class Initialized
+DEBUG - 2017-07-12 04:02:57 --> Session routines successfully run
+DEBUG - 2017-07-12 04:02:57 --> Session Class Initialized
+DEBUG - 2017-07-12 04:02:57 --> Session routines successfully run
+DEBUG - 2017-07-12 04:02:57 --> Session Class Initialized
+DEBUG - 2017-07-12 04:02:57 --> Session Class Initialized
+DEBUG - 2017-07-12 04:02:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:02:57 --> Session routines successfully run
+DEBUG - 2017-07-12 04:02:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:02:57 --> Session routines successfully run
+DEBUG - 2017-07-12 04:02:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:02:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:02:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:59 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:02:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:02:59 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:02:59 --> Session Class Initialized
+DEBUG - 2017-07-12 04:02:59 --> Session routines successfully run
+DEBUG - 2017-07-12 04:02:59 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:02:59 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:59 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:02:59 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:42 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:03:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:03:42 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:03:42 --> Session Class Initialized
+DEBUG - 2017-07-12 04:03:42 --> Session routines successfully run
+DEBUG - 2017-07-12 04:03:42 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:42 --> Total execution time: 0.1372
+DEBUG - 2017-07-12 04:03:43 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:03:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:03:43 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:03:43 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:03:43 --> Session Class Initialized
+DEBUG - 2017-07-12 04:03:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:03:43 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:03:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:03:43 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:03:43 --> Session routines successfully run
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:03:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:43 --> Session Class Initialized
+DEBUG - 2017-07-12 04:03:43 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:43 --> Session routines successfully run
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:03:43 --> Session Class Initialized
+DEBUG - 2017-07-12 04:03:43 --> Session Class Initialized
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:03:43 --> Session routines successfully run
+DEBUG - 2017-07-12 04:03:43 --> Session Class Initialized
+DEBUG - 2017-07-12 04:03:43 --> Session routines successfully run
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:03:43 --> Session routines successfully run
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:43 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:43 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:45 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:03:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:03:45 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:03:45 --> Session Class Initialized
+DEBUG - 2017-07-12 04:03:45 --> Session routines successfully run
+DEBUG - 2017-07-12 04:03:45 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:03:45 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:45 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:03:45 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:02 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:04:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:04:02 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:04:02 --> Session Class Initialized
+DEBUG - 2017-07-12 04:04:02 --> Session routines successfully run
+DEBUG - 2017-07-12 04:04:02 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:02 --> Total execution time: 0.1969
+DEBUG - 2017-07-12 04:04:03 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:04:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:04:03 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:04:03 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:04:03 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:04:03 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:04:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:04:03 --> Session Class Initialized
+DEBUG - 2017-07-12 04:04:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:04:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:04:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:04:03 --> Session routines successfully run
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:04:03 --> Session Class Initialized
+DEBUG - 2017-07-12 04:04:03 --> Session Class Initialized
+DEBUG - 2017-07-12 04:04:03 --> Session Class Initialized
+DEBUG - 2017-07-12 04:04:03 --> Session Class Initialized
+DEBUG - 2017-07-12 04:04:03 --> Session routines successfully run
+DEBUG - 2017-07-12 04:04:03 --> Session routines successfully run
+DEBUG - 2017-07-12 04:04:03 --> Session routines successfully run
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:03 --> Session routines successfully run
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:04:03 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:03 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:05 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:04:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:04:05 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:04:05 --> Session Class Initialized
+DEBUG - 2017-07-12 04:04:05 --> Session routines successfully run
+DEBUG - 2017-07-12 04:04:05 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:04:05 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:05 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:05 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-12 04:04:05 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, cannot access private method Result_pins::class_pin_printout_get() C:\xampp\htdocs\school_ms\application\libraries\REST_Controller.php 437
+DEBUG - 2017-07-12 04:04:05 --> Total execution time: 0.1848
+DEBUG - 2017-07-12 04:04:07 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:04:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:04:07 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:04:07 --> Session Class Initialized
+DEBUG - 2017-07-12 04:04:07 --> Session routines successfully run
+DEBUG - 2017-07-12 04:04:07 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:04:07 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:07 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:04:07 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:37 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:06:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:06:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:06:37 --> Session Class Initialized
+DEBUG - 2017-07-12 04:06:37 --> Session routines successfully run
+DEBUG - 2017-07-12 04:06:38 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:38 --> Total execution time: 0.1253
+DEBUG - 2017-07-12 04:06:39 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:06:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:06:39 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:06:39 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:06:39 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:06:39 --> Session Class Initialized
+DEBUG - 2017-07-12 04:06:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:06:39 --> Session routines successfully run
+DEBUG - 2017-07-12 04:06:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:06:39 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:06:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:06:39 --> Session Class Initialized
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:06:39 --> Session routines successfully run
+DEBUG - 2017-07-12 04:06:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:06:39 --> Session Class Initialized
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:06:39 --> Session Class Initialized
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:06:39 --> Session routines successfully run
+DEBUG - 2017-07-12 04:06:39 --> Session routines successfully run
+DEBUG - 2017-07-12 04:06:39 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:39 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:06:39 --> Session Class Initialized
+DEBUG - 2017-07-12 04:06:39 --> Session routines successfully run
+DEBUG - 2017-07-12 04:06:39 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:06:39 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:39 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:39 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:06:39 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:39 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:40 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:06:40 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:29 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:07:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:07:29 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:07:29 --> Session Class Initialized
+DEBUG - 2017-07-12 04:07:29 --> Session routines successfully run
+DEBUG - 2017-07-12 04:07:29 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:29 --> Total execution time: 0.1436
+DEBUG - 2017-07-12 04:07:30 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:07:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:07:30 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:07:30 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:07:30 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:07:30 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:07:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:07:30 --> Session Class Initialized
+DEBUG - 2017-07-12 04:07:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:07:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:07:30 --> Session routines successfully run
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:07:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:07:30 --> Session Class Initialized
+DEBUG - 2017-07-12 04:07:30 --> Session routines successfully run
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:07:30 --> Session Class Initialized
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:07:30 --> Session routines successfully run
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:07:30 --> Session Class Initialized
+DEBUG - 2017-07-12 04:07:30 --> Session routines successfully run
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:30 --> Session Class Initialized
+DEBUG - 2017-07-12 04:07:30 --> Session routines successfully run
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:07:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:35 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:07:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:07:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:07:35 --> Session Class Initialized
+DEBUG - 2017-07-12 04:07:35 --> Session routines successfully run
+DEBUG - 2017-07-12 04:07:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:07:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:07:35 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-12 04:07:35 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, cannot access private method Result_pins::class_pin_printout_get() C:\xampp\htdocs\school_ms\application\libraries\REST_Controller.php 437
+DEBUG - 2017-07-12 04:07:35 --> Total execution time: 0.1708
+DEBUG - 2017-07-12 04:08:23 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:08:23 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:08:23 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:08:23 --> Session Class Initialized
+DEBUG - 2017-07-12 04:08:23 --> Session routines successfully run
+DEBUG - 2017-07-12 04:08:23 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:08:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:08:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:08:23 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:09:01 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:09:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:09:01 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:09:01 --> Session Class Initialized
+DEBUG - 2017-07-12 04:09:01 --> Session routines successfully run
+DEBUG - 2017-07-12 04:09:01 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:09:01 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:09:01 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:09:01 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:09:05 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:09:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:09:05 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:09:05 --> Session Class Initialized
+DEBUG - 2017-07-12 04:09:05 --> Session routines successfully run
+DEBUG - 2017-07-12 04:09:05 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:09:05 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:09:05 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:09:05 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:51 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:19:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:19:51 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:19:51 --> Session Class Initialized
+DEBUG - 2017-07-12 04:19:51 --> Session routines successfully run
+DEBUG - 2017-07-12 04:19:51 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:51 --> Total execution time: 0.1768
+DEBUG - 2017-07-12 04:19:53 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:19:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:19:53 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:19:53 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:19:53 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:19:53 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:19:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:19:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:19:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:19:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:19:53 --> Session Class Initialized
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:19:53 --> Session Class Initialized
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:19:53 --> Session routines successfully run
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:19:53 --> Session routines successfully run
+DEBUG - 2017-07-12 04:19:53 --> Session Class Initialized
+DEBUG - 2017-07-12 04:19:53 --> Session routines successfully run
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:19:53 --> Session Class Initialized
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:19:53 --> Session Class Initialized
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:19:53 --> Session routines successfully run
+DEBUG - 2017-07-12 04:19:53 --> Session routines successfully run
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:19:53 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:53 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:55 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:19:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:19:55 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:19:55 --> Session Class Initialized
+DEBUG - 2017-07-12 04:19:55 --> Session routines successfully run
+DEBUG - 2017-07-12 04:19:55 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:19:55 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:55 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:55 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:57 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:19:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:19:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:19:57 --> Session Class Initialized
+DEBUG - 2017-07-12 04:19:57 --> Session routines successfully run
+DEBUG - 2017-07-12 04:19:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:19:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:19:57 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-12 04:19:57 --> Severity: Notice --> Undefined property: DompdfLib::$config C:\xampp\htdocs\school_ms\application\libraries\DompdfLib.php 96
+ERROR - 2017-07-12 04:19:57 --> Severity: error --> Exception: Call to a member function item() on null C:\xampp\htdocs\school_ms\application\libraries\DompdfLib.php 96
+DEBUG - 2017-07-12 04:20:29 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:20:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:20:29 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:20:29 --> Session Class Initialized
+DEBUG - 2017-07-12 04:20:29 --> Session routines successfully run
+DEBUG - 2017-07-12 04:20:29 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:20:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:20:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:20:30 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-12 04:20:30 --> Severity: Warning --> file_put_contents(C:/xampp/htdocs/school_ms/uploads/pdf_report/uploads/pdf_report/_.pdf.pdf): failed to open stream: No such file or directory C:\xampp\htdocs\school_ms\application\libraries\DompdfLib.php 79
+ERROR - 2017-07-12 04:20:30 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\school_ms\system\core\Exceptions.php:272) C:\xampp\htdocs\school_ms\application\libraries\REST_Controller.php 491
+ERROR - 2017-07-12 04:20:30 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\school_ms\system\core\Exceptions.php:272) C:\xampp\htdocs\school_ms\system\core\Common.php 573
+ERROR - 2017-07-12 04:20:30 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\school_ms\system\core\Exceptions.php:272) C:\xampp\htdocs\school_ms\application\libraries\REST_Controller.php 514
+DEBUG - 2017-07-12 04:22:57 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:22:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:22:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:22:57 --> Session Class Initialized
+DEBUG - 2017-07-12 04:22:57 --> Session routines successfully run
+DEBUG - 2017-07-12 04:22:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:22:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:22:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:22:58 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:33 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:33 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:33 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:33 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:33 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:33 --> Total execution time: 0.1765
+DEBUG - 2017-07-12 04:35:35 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:35 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:35 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:35 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:35 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:35 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:35 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:35 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:35 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:35 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:35 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:35 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:35 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:35 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:35 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:35:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:35 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:38 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:38 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:38 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:38 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:38 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:35:38 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:38 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:38 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:40 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:40 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:40 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:40 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:40 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:35:40 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:40 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:40 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:46 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:35:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:35:46 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:35:46 --> Session Class Initialized
+DEBUG - 2017-07-12 04:35:46 --> Session routines successfully run
+DEBUG - 2017-07-12 04:35:46 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:35:46 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:46 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:35:46 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:38:37 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:38:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:38:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:38:37 --> Session Class Initialized
+DEBUG - 2017-07-12 04:38:37 --> Session routines successfully run
+DEBUG - 2017-07-12 04:38:37 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:38:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:38:37 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:38:37 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-12 04:38:37 --> Severity: Notice --> Undefined property: DompdfLib::$config C:\xampp\htdocs\school_ms\application\libraries\DompdfLib.php 96
+ERROR - 2017-07-12 04:38:37 --> Severity: error --> Exception: Call to a member function item() on null C:\xampp\htdocs\school_ms\application\libraries\DompdfLib.php 96
+DEBUG - 2017-07-12 04:38:50 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:38:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:38:50 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:38:50 --> Session Class Initialized
+DEBUG - 2017-07-12 04:38:50 --> Session routines successfully run
+DEBUG - 2017-07-12 04:38:50 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:38:50 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:38:50 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:38:50 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:39:27 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:39:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:39:27 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:39:27 --> Session Class Initialized
+DEBUG - 2017-07-12 04:39:27 --> Session routines successfully run
+DEBUG - 2017-07-12 04:39:27 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:39:27 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:39:27 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:39:27 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:39:36 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:39:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:39:36 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:39:36 --> Session Class Initialized
+DEBUG - 2017-07-12 04:39:36 --> Session routines successfully run
+DEBUG - 2017-07-12 04:39:36 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:39:36 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:39:36 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:39:36 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:40:19 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:40:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:40:19 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:40:19 --> Session Class Initialized
+DEBUG - 2017-07-12 04:40:19 --> Session routines successfully run
+DEBUG - 2017-07-12 04:40:20 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:40:20 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:40:20 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:40:20 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:40:50 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:40:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:40:50 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:40:50 --> Session Class Initialized
+DEBUG - 2017-07-12 04:40:50 --> Session routines successfully run
+DEBUG - 2017-07-12 04:40:50 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:40:50 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:40:50 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:40:50 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:41:55 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:41:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:41:55 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:41:55 --> Session Class Initialized
+DEBUG - 2017-07-12 04:41:55 --> Session routines successfully run
+DEBUG - 2017-07-12 04:41:55 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:41:55 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:41:55 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:41:55 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:00 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:42:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:42:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:42:00 --> Session Class Initialized
+DEBUG - 2017-07-12 04:42:00 --> Session routines successfully run
+DEBUG - 2017-07-12 04:42:00 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:42:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:00 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:30 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:42:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:42:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:42:30 --> Session Class Initialized
+DEBUG - 2017-07-12 04:42:30 --> Session routines successfully run
+DEBUG - 2017-07-12 04:42:30 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:42:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:30 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:31 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:35 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:42:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:42:35 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:42:36 --> Session Class Initialized
+DEBUG - 2017-07-12 04:42:36 --> Session routines successfully run
+DEBUG - 2017-07-12 04:42:36 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:42:36 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:36 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:36 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:57 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:42:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:42:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:42:57 --> Session Class Initialized
+DEBUG - 2017-07-12 04:42:57 --> Session routines successfully run
+DEBUG - 2017-07-12 04:42:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:42:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:42:57 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:43:49 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:43:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:43:49 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:43:49 --> Session Class Initialized
+DEBUG - 2017-07-12 04:43:49 --> Session routines successfully run
+DEBUG - 2017-07-12 04:43:49 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:43:49 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:43:50 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:43:50 --> Myapp class already loaded. Second attempt ignored.
+ERROR - 2017-07-12 04:43:50 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameReflower\Block.php 781
+ERROR - 2017-07-12 04:43:50 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 217
+ERROR - 2017-07-12 04:43:50 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\LineBox.php 221
+ERROR - 2017-07-12 04:43:50 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 175
+ERROR - 2017-07-12 04:43:50 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\FrameDecorator\Block.php 239
+ERROR - 2017-07-12 04:43:50 --> Severity: Warning --> A non-numeric value encountered C:\xampp\htdocs\school_ms\application\libraries\dompdf\src\Frame.php 566
+DEBUG - 2017-07-12 04:44:08 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:44:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:44:08 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:44:08 --> Session Class Initialized
+DEBUG - 2017-07-12 04:44:08 --> Session routines successfully run
+DEBUG - 2017-07-12 04:44:08 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:44:08 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:44:08 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:44:08 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:44:42 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 04:44:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 04:44:42 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 04:44:42 --> Session Class Initialized
+DEBUG - 2017-07-12 04:44:42 --> Session routines successfully run
+DEBUG - 2017-07-12 04:44:42 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 04:44:42 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:44:42 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 04:44:42 --> Myapp class already loaded. Second attempt ignored.

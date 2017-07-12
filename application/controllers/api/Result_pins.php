@@ -11,6 +11,8 @@ class Result_pins extends ApiBase {
 
         $this->load->model("results/Result_pins_model", "Result_pins");
         $this->load->model("Classes_model", "Classes");
+
+        $this->load->library("DompdfLib", null, "PDFLibrary");
     }
 
 
@@ -52,8 +54,7 @@ class Result_pins extends ApiBase {
 		$this->response($response);
     }
 
-
-    public function print_class_pins_get($class_id){
+    public function download_class_pins_get($class_id){
     	$response = $this->Result_pins->get_pins_for_students_in_class($class_id);
     	$class_name = $this->Classes->get_class_name($class_id);
     	$html = $this->get_pins_as_html_for_class($class_id, $class_name);
@@ -81,13 +82,12 @@ class Result_pins extends ApiBase {
     	}
     }
 
-
-    public function print_all_pins_get(){
+    public function download_all_pins_get(){
 
     	$generated = $this->Result_pins->get_generated();	
     	if(is_array($generated) && sizeof($generated['data'] > 0)){
 
-    		$this->load->library("DompdfLib", null, "PDFLibrary");
+
     		foreach($generated['data'] as $record){
     			$class_name = $this->Classes->get_class_name($record['class_id']);
     			$html = $this->get_pins_as_html_for_class($record['class_id'], $class_name);
@@ -110,7 +110,6 @@ class Result_pins extends ApiBase {
     	}
     }
 
-
     private function get_pins_as_html_for_class($class_id, $class_name){
     	$response = $this->Result_pins->get_pins_for_students_in_class($class_id);
     	if(sizeof($response['data']) > 0){
@@ -121,6 +120,30 @@ class Result_pins extends ApiBase {
  		else {
  			return null;
  		}
+    }
+
+    public function student_pin_printout_get(){
+        $req = $this->input->get();
+        if(!isset($req['student_name']) || !isset($req['pin']) || !isset($req['serial'])){
+            $this->response(rest_error("Invalid request"));
+        }
+        else {
+            $pin = $req;
+            $html = $this->load->view("print_template/student_pin_printout", $pin, TRUE);
+            $file_name = $req['student_name'];
+            $file_path = $this->PDFLibrary->get_html_as_pdf_file($html, $file_name);
+            $this->response(rest_success($file_path));
+        }
+    }
+
+    public function class_pin_printout_get(){
+        $req = $this->input->get();
+        if(!isset($req['class_id'])){
+            $this->response(rest_error("Invalid request. Please retry."));
+        }
+        else {
+            $this->response(rest_success("PDF File Url"));
+        }
     }
 
 }

@@ -82,7 +82,7 @@ class DompdfLib implements PDFLibrary {
 
 
 	public function output($file_name){
-		$file_full_name = $this->get_output_file($filename);
+		$file_full_name = $this->get_output_file($file_name);
 
 		header('Content-type: application/pdf');
 		header('Content-Disposition: inline; filename="' . $file_name . '"');
@@ -90,5 +90,15 @@ class DompdfLib implements PDFLibrary {
 		header('Accept-Ranges: bytes');
   		@readfile($file_full_name);
 	}
+
+	public function get_html_as_pdf_file($html, $file_name){
+	    $this->load_html($html);
+	    if($this->convert()) {
+            $friendly_file_path = $this->CI->config->item('pdf_upload_base') . str_replace(" ", "_", $file_name) . ".pdf";
+            $this->get_output_file($file_name);
+            return base_url($friendly_file_path);
+        }
+        else return null;
+    }
 
 }

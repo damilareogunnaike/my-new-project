@@ -22,8 +22,7 @@
                                 <h4>
                                     Generated Pins
                                      <div class="pull-right text-right">
-                                        <button ng-click="printAll()" class="btn btn-primary btn-sm">Print All <i class="fa fa-print"></i></button>
-                                        <button ng-click="clearAll()" class="btn btn-danger btn-sm">Clear All <i class="fa fa-trash"></i></button>
+                                        <button ng-click="downloadAll()" class="btn btn-primary btn-sm">Print All <i class="fa fa-download"></i></button>
                                     </div>
                                 </h4>
                                 <br/>
@@ -49,7 +48,10 @@
                                                 <button ng-click="viewPins(record)" data-toggle="tooltip" title="View Pins" class="btn btn-info btn-sm">
                                                     <i class="fa fa-eye"></i>
                                                 </button>
-                                                 <button ng-click="printClassPins(record)" data-toggle="tooltip" title="Print Pins" class="btn btn-primary btn-sm">
+                                                 <button ng-click="downloadClassPins(record)" data-toggle="tooltip" title="Download Pins" class="btn btn-primary btn-sm">
+                                                    <i class="fa fa-download"></i>
+                                                </button>
+                                                <button ng-click="printClassPins(record)" data-toggle="tooltip" title="Print Pins" class="btn btn-info btn-sm">
                                                     <i class="fa fa-print"></i>
                                                 </button>
                                             </td>
