@@ -121,11 +121,11 @@ ResultPinsModule.controller("PinsController",['$scope','$rootScope', '$window','
 
                             $scope.handleError = function(error){
                             	$scope.loading = false;
-                            	AlertService.error(error.msg);
+                            	AlertService.error("A server error occurred. Please contact support.");
 							};
 
                             $scope.isLoading = function(index){
-                            	return $scope.loading && $scope.selectedIndex == index;
+                            	return $scope.loading && $scope.selectedIndex === index;
 							}
 						}
 					})

@@ -7,11 +7,23 @@
         }
     }
 
-    p, ol li {
+    p, ol li, h4 {
         line-height: 25px;
+        font-size:16px;
     }
     .container {
         padding-top:40px;
+    }
+
+    .steps-list {
+        padding-top: 6px;
+    }
+
+    .steps-list h4 {
+        font-weight:700;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 3px;
     }
 </style>
 
@@ -36,18 +48,34 @@
 
     <hr style="margin:0;">
     <br/>
-    <h4>Dear Parent/Guardian,</h4>
+
+    <p>Dear Parent/Guardian,</p>
 
     <p>
-        Kindly follow the procedures to access  the <?=$session_name;?> & <?=$term_name;?> result  for <strong><?=strtoupper($student_name);?>.</strong>
+        Kindly follow the procedures to access  the <strong><?=$session_name;?> - </strong><strong><?=$term_name;?></strong> result  for the following student.
     </p>
-    <ol>
-        <li>Visit the school website www.evangelmodel.org</li>
-        <li>Click on "Result Portal"</li>
-        <li>Enter the PIN NO: <strong><?=$pin;?></strong></li>
-        <li>Enter the Serial No: <strong><?=$serial;?></strong></li>
-        <li>View students result and print.</li>
-    </ol>
+
+    <p>Name: <strong><?=$student_name;?></strong></p>
+    <p>
+        Class: <strong><?=$class_name;?></strong>
+    </p>
+
+    <div class="steps-list">
+        <h4>Step 1:</h4>
+        <p>Visit the school website www.evangelmodel.org</p>
+
+        <h4>Step 2:</h4>
+        <p>Click on "Result Portal"</p>
+
+        <h4>Step 3</h4>
+        <p>Enter the PIN NO: <strong><?=$pin;?></strong></p>
+
+        <h4>Step 4</h4>
+        <p>Enter the Serial No: <strong><?=$serial;?></strong></p>
+
+        <h4>Step 5</h4>
+        <p>View students result and print.</p>
+    </div>
 
     <br/>
 
@@ -60,4 +88,3 @@
         <p>Powered by Apprize Technologies</p>
     </div>
 </div>
-<div style="page-break-after: always;"></div>
