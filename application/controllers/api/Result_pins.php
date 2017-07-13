@@ -13,6 +13,7 @@ class Result_pins extends ApiBase {
         $this->load->model("Classes_model", "Classes");
 
         $this->load->library("DompdfLib", null, "PDFLibrary");
+        $this->load->model('School_setup_model','School_setup');
     }
 
 
@@ -128,8 +129,18 @@ class Result_pins extends ApiBase {
             $this->response(rest_error("Invalid request"));
         }
         else {
-            $pin = $req;
-            $html = $this->load->view("print_template/student_pin_printout", $pin, TRUE);
+            $data = $req;
+            $school_settings = $this->School_setup->get_school_settings();
+            $data = array_merge($data, $school_settings);
+            $data['session_name'] = $this->School_setup->get_session_name($data['session_id']);
+            $data['term_name'] = $this->School_setup->get_term_name($data['term_id']);
+
+            $logo_path = base_url($school_settings['school_logo']);
+            $logo_data = file_get_contents($logo_path);
+            $type = pathinfo($logo_path, PATHINFO_EXTENSION);
+            $data['school_logo'] = 'data:image/' . $type . ';base64,' . base64_encode($logo_data);
+            $html = $this->load->view("print_template/student_pin_printout", $data, TRUE);
+
             $file_name = $req['student_name'];
             $file_path = $this->PDFLibrary->get_html_as_pdf_file($html, $file_name);
             $this->response(rest_success($file_path));
@@ -142,8 +153,38 @@ class Result_pins extends ApiBase {
             $this->response(rest_error("Invalid request. Please retry."));
         }
         else {
-            $this->response(rest_success("PDF File Url"));
+            $curr_session_id = $this->myapp->get_current_session_id();
+            $curr_term_id = $this->myapp->get_current_term_id();
+
+            $student_pins = $this->Result_pins->get_by_session_term_class($curr_session_id, $curr_term_id, $req['class_id']);
+
+            $html = "";
+            $data['session_name'] = $this->School_setup->get_session_name($curr_session_id);
+            $data['term_name'] = $this->School_setup->get_term_name($curr_term_id);
+            $school_settings = $this->School_setup->get_school_settings();
+            $data = array_merge($data, $school_settings);
+            $data['school_logo'] = $this->get_image_data($school_settings['school_logo']);
+
+            foreach($student_pins as $pin){
+                $data['pin'] = $pin['pin'];
+                $data['serial'] = $pin['serial'];
+                $data['student_name'] = $pin['student_name'];
+                $student_html = $this->load->view("print_template/student_pin_printout", $data, TRUE);
+                $html  .= $student_html;
+            }
+            
+            $file_name = $req['class_name'];
+            $file_path = $this->PDFLibrary->get_html_as_pdf_file($html, $file_name);
+            $this->response(rest_success($file_path));
         }
+    }
+
+    private function get_image_data($image){
+        $logo_path = base_url($image);
+        $logo_data = file_get_contents($logo_path);
+        $type = pathinfo($logo_path, PATHINFO_EXTENSION);
+        $data = 'data:image/' . $type . ';base64,' . base64_encode($logo_data);
+        return $data;
     }
 
 }

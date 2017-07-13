@@ -83,25 +83,25 @@ ngLahray.service("WebService",function($q,$http){
 ngLahray.service("AlertService",function(){
     
     this.notify = function(msg){
-      alert(msg);  
+      swal(msg);
     };
     
     this.error = function(msg){
         if(typeof msg == "string" &&  msg.length > 0) {
             //Then this is an html string
             if(msg[0] === "<") {
-                $alert = $(msg);
-                $alert.css({"position":"absolute","z-index":100});
-               $("body").append($alert);
+                _alert = $(msg);
+                _alert.css({"position":"absolute","z-index":100});
+               $("body").append(_alert);
             }
             else {
-              alert(msg);
+                swal('',msg, 'error');
             }
         } 
     };
     
     this.success = function(msg){
-        alert(msg);
+        swal('Success',msg, 'success');
     };
     
     this.confirm = function(msg){
@@ -109,7 +109,7 @@ ngLahray.service("AlertService",function(){
     };
     
     this.msg = function(msg){
-        alert(msg);
+        swal(msg);
     };
 });
 

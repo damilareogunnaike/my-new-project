@@ -24,6 +24,12 @@ ParentsModule.factory("ENDPOINTS", function(BASE_URL){
     }
 });
 
+ParentsModule.config(function($mdThemingProvider){
+   // $mdThemingProvider.theme('default')
+   //     .primaryPalette('pink')
+   //     .accentPalette('orange')
+});
+
 ParentsModule.factory("PARTIALS", function(){
     BASE_URL = BASE_URL.endsWith("/") ? BASE_URL  : BASE_URL + "/";
 

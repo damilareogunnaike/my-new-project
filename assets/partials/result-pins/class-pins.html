@@ -3,7 +3,6 @@
 		<span ng-bind="selected.class_name"></span>
 		<i class="fa fa-times pull-right" ng-click="close()" style="cursor:pointer;"></i>
 	</h4>
-
 </div>
 <div class="modal-body">
 	<table class="table table-bordered table-condensed table-hover">
@@ -14,13 +13,18 @@
 			<th>Serial</th>
 			<th>Usage Count</th>
 		</thead>
-		<tr ng-repeat="pin in pins">
+		<tr ng-repeat="pin in pins track by $index">
 			<td ng-bind="$index + 1"></td>
 			<td ng-bind="pin.student_name"></td>
 			<td ng-bind="pin.pin"></td>
 			<td ng-bind="pin.serial"></td>
 			<td ng-bind="pin.usage_count || 0"></td>
-			<td ng-click="printStudentPin(pin)"><button class="btn btn-sm btn-info"><i class="fa fa-print"></i> </button> </td>
+			<td ng-click="printStudentPin(pin)">
+				<button class="btn btn-sm btn-info" ng-disabled="isLoading($index)">
+					<i class="fa fa-print" ng-show="!isLoading($index)"></i>
+					<i class="fa fa-spinner fa-spin" ng-show="isLoading($index)"></i>
+				</button>
+			</td>
 		</tr>
 	</table>
 </div>

@@ -2322,3 +2322,52 @@ DEBUG - 2017-07-12 04:44:42 --> Config file loaded: C:\xampp\htdocs\school_ms\ap
 DEBUG - 2017-07-12 04:44:42 --> Myapp class already loaded. Second attempt ignored.
 DEBUG - 2017-07-12 04:44:42 --> Myapp class already loaded. Second attempt ignored.
 DEBUG - 2017-07-12 04:44:42 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 23:30:49 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 23:30:49 --> No URI present. Default controller set.
+DEBUG - 2017-07-12 23:30:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 23:30:49 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 23:30:50 --> Session Class Initialized
+ERROR - 2017-07-12 23:30:50 --> Session: The session cookie was not signed.
+DEBUG - 2017-07-12 23:30:50 --> Session routines successfully run
+DEBUG - 2017-07-12 23:30:51 --> Total execution time: 1.7474
+DEBUG - 2017-07-12 23:30:51 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 23:30:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 23:30:51 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 23:30:51 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 23:30:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 23:30:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 23:30:51 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 23:30:51 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 23:30:51 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 23:30:52 --> Session Class Initialized
+DEBUG - 2017-07-12 23:30:52 --> Session Class Initialized
+DEBUG - 2017-07-12 23:30:52 --> Session Class Initialized
+DEBUG - 2017-07-12 23:30:52 --> Session routines successfully run
+DEBUG - 2017-07-12 23:30:52 --> Session routines successfully run
+DEBUG - 2017-07-12 23:30:52 --> Session routines successfully run
+DEBUG - 2017-07-12 23:30:52 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 23:30:52 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 23:30:52 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/rest.php
+DEBUG - 2017-07-12 23:30:52 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 23:30:52 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 23:30:52 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 23:30:52 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 23:30:57 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 23:30:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 23:30:57 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 23:30:57 --> Session Class Initialized
+DEBUG - 2017-07-12 23:30:57 --> Session routines successfully run
+DEBUG - 2017-07-12 23:30:57 --> Total execution time: 0.2185
+DEBUG - 2017-07-12 23:31:04 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 23:31:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 23:31:04 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 23:31:04 --> Session Class Initialized
+DEBUG - 2017-07-12 23:31:04 --> Session routines successfully run
+DEBUG - 2017-07-12 23:31:04 --> User with name damilare just logged in
+DEBUG - 2017-07-12 23:31:04 --> UTF-8 Support Enabled
+DEBUG - 2017-07-12 23:31:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-07-12 23:31:04 --> Config file loaded: C:\xampp\htdocs\school_ms\application\config/app_config.php
+DEBUG - 2017-07-12 23:31:04 --> Session Class Initialized
+DEBUG - 2017-07-12 23:31:04 --> Session routines successfully run
+DEBUG - 2017-07-12 23:31:04 --> Myapp class already loaded. Second attempt ignored.
+DEBUG - 2017-07-12 23:31:04 --> Total execution time: 0.1970

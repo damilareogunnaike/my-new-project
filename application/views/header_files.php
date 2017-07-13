@@ -3,7 +3,7 @@
 <head>
 	<title><?=isset($title) ? $title : '';?></title>
 	<?=link_tag('assets/bootstrap/css/metro-bootstrap.css')?>
-	<?=link_tag('assets/fonts/fontello/css/fontello.css')?>
+    <?=link_tag('assets/node_modules/sweetalert/dist/sweetalert.css')?>
 	<?=link_tag('assets/fonts/font-awesome/css/font-awesome.css')?>
 	<?=link_tag('assets/css/animations.css')?>
 	<?=link_tag('assets/css/animate.css')?>

@@ -1,11 +1,11 @@
 <!-- Import Scripts -->
 <script src="<?=base_url('assets/js/jquery-1.11.3.min.js')?>"></script>
 <script src="<?=base_url('assets/js/jquery.dataTables.js')?>"></script>
+<script src="<?=base_url('assets/node_modules/sweetalert/dist/sweetalert.min.js')?>"></script>
 <script src="<?=base_url('assets/bootstrap/js/bootstrap.js')?>"></script>
 <script src="<?=base_url('assets/plugins/modernizr.js')?>"></script>
 
 <!-- Date picker Javascript and CSS FIles -->
-<?=link_tag('assets/datepicker/themes/base/jquery.ui.all.css')?>
 <script src="<?=base_url('assets/datepicker/jquery.ui.core.js')?>"></script>
 <script src="<?=base_url('assets/datepicker/jquery.ui.datepicker.js')?>"></script>
 

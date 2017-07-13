@@ -101,7 +101,9 @@ ResultPinsModule.controller("PinsController",['$scope','$rootScope', '$window','
 								$uibModalInstance.close();
 							};
 
+							$scope.selectedIndex = -1;
                             $scope.printStudentPin = function(pin){
+                            	$scope.selectedIndex = $scope.pins.indexOf(pin);
                                 $scope.loading = true;
                                 PinsService.getStudentPinFile(pin).then($scope.handlePrintSuccess, $scope.handleError);
                             };
@@ -121,6 +123,10 @@ ResultPinsModule.controller("PinsController",['$scope','$rootScope', '$window','
                             	$scope.loading = false;
                             	AlertService.error(error.msg);
 							};
+
+                            $scope.isLoading = function(index){
+                            	return $scope.loading && $scope.selectedIndex == index;
+							}
 						}
 					})
 				}

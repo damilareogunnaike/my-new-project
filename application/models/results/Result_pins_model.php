@@ -9,7 +9,6 @@ class Result_pins_model extends Crud_model {
 		$this->load->library("Myapp");
 	}
 
-
 	public function get_generated(){
 		$session_id = $this->myapp->get_current_session_id();
 		$term_id = $this->myapp->get_current_term_id();
@@ -28,7 +27,6 @@ class Result_pins_model extends Crud_model {
 		return rest_success($data);
 	}
 
-
 	public function get_pins_for_students_in_class($class_id){
 		$session_id = $this->myapp->get_current_session_id();
 		$term_id = $this->myapp->get_current_term_id();
@@ -45,7 +43,6 @@ class Result_pins_model extends Crud_model {
 		return rest_success($rs->result_array());
 	}
 
-
 	public function delete_pins_for_students_in_class($class_id){
 		$req_obj['session_id'] = $this->myapp->get_current_session_id();
 		$req_obj['term_id'] = $this->myapp->get_current_term_id();
@@ -55,7 +52,6 @@ class Result_pins_model extends Crud_model {
 		$this->db->delete("result_pins");
 		return rest_success("Pins deleted.");
 	}
-
 
 	public function generate_for_class($class_id){
 		$req_obj = array();
@@ -91,7 +87,6 @@ class Result_pins_model extends Crud_model {
 		return rest_success("Pins generated successfully..");
 	}
 
-
 	private function generate_pin($student_id, $student_name){
         $student_id = str_pad($student_id, 5, "0", STR_PAD_LEFT);
         $names = explode(" ", $student_name);
@@ -101,7 +96,6 @@ class Result_pins_model extends Crud_model {
 		$serial = $prefix . $student_id;
 		return array("serial"=>$serial,"pin"=>$pin);
 	}
-
 
 	public function check_pin($req_data){
 
@@ -122,8 +116,26 @@ class Result_pins_model extends Crud_model {
         }
     }
 
-
     private function get_related_students($req_data) {
 	    return array();
+    }
+
+    public function get_by_session_term_class($session_id, $term_id, $class_id){
+
+        $this->db->select("a.student_id, CONCAT(b.surname, ' ', b.first_name) AS student_name, a.*");
+        $this->db->from("result_pins a, student_biodata b");
+	    $this->db->where("session_id", $session_id);
+        $this->db->where("term_id", $term_id);
+        $this->db->where("a.class_id", $class_id);
+
+        $this->db->where("a.student_id = b.id");
+
+        $rs = $this->db->get();
+        if($rs->num_rows() > 0){
+            return $rs->result_array();
+        }
+        else {
+            return array();
+        }
     }
 }
