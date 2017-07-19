@@ -17,7 +17,9 @@ ResultPinsModule.factory("PINS_ENDPOINTS", function(BASE_URL){
 		DOWNLOAD_CLASS_PINS : HOST + "download_class_pins",
 		DOWNLOAD_ALL_PINS : HOST + "download_all_pins",
 		STUDENT_PIN_PRINTOUT : HOST + "student_pin_printout",
-		CLASS_PIN_PRINTOUT : HOST + "class_pin_printout"
+		CLASS_PIN_PRINTOUT : HOST + "class_pin_printout",
+        STUDENT_PIN_GENERATE : HOST + "student_pin_generate",
+        STUDENT_PIN_GET : HOST + "student_pin"
 	}
 });
 
@@ -26,7 +28,8 @@ ResultPinsModule.factory("PINS_PARTIALS", function(BASE_URL){
 	BASE_URL = BASE_URL.endsWith("/") ? BASE_URL  : BASE_URL + "/";
 	PATH = BASE_URL + "assets/partials/result-pins/";
 	return {
-		CLASS_PINS    : PATH + "class-pins.html"
+		CLASS_PINS    : PATH + "class-pins.html",
+		STUDENT_PIN : PATH + "student-pin.html"
 	}
 });
 
@@ -218,9 +221,68 @@ ResultPinsModule.controller("PinsController",['$scope','$rootScope', '$window','
             }
         };
 
+        $scope.viewStudentPin = function(student){
+        	$scope.loading = true;
+
+        	$uibModal.open({
+				templateUrl : PINS_PARTIALS.STUDENT_PIN,
+				controller: function ($scope, student, PinsService, $uibModalInstance) {
+					$scope.student = student;
+
+					$scope.studentPin;
+					$scope.hasPin = false;
+					$scope.loading = false;
+
+					$scope.errorMessage = "";
+
+					$scope.getPin = function(){
+						PinsService.getStudentPin(student.student_id).then(function(response){
+							if(response.success){
+								$scope.studentPin = true;
+							}
+							else {
+								$scope.errorMessage = response.msg || "Unable to generate pins";
+							}
+						}, function(error){
+							$scope.errorMessage = error.msg || "Unable to generate pins.";
+						});
+					};
+
+					$scope.generateStudentPin = function(){
+						PinsService.generateStudentPin(student.student_id).then(function(response){
+                            $scope.loading = false;
+							if(response.result){
+								$scope.studentPin = response.data;
+							}
+							else {
+                                $scope.errorMessage = response.msg || "Unable to generate pins";
+							}
+						}, function (error) {
+                            $scope.loading = false;
+                            $scope.errorMessage = error.msg || "Unable to generate pins";
+                        })
+					};
+
+					$scope.$watch("studentPin", function(){
+						$scope.hasPin = !($scope.studentPin == null);
+					});
+
+                    $scope.close = function(){
+                        $uibModalInstance.close();
+                    };
+
+					$scope.getPin();
+                },
+				resolve : {
+					student : function() {
+						return student;
+					}
+				}
+			})
+
+		}
+
 	}]);
-
-
 
 ResultPinsModule.service("PinsService", ["WebService",'PINS_ENDPOINTS',
 	function(WebService,PINS_ENDPOINTS){
@@ -285,6 +347,14 @@ ResultPinsModule.service("PinsService", ["WebService",'PINS_ENDPOINTS',
 		this.getClassPinFile = function(reqObj){
 			return WebService.get(PINS_ENDPOINTS.CLASS_PIN_PRINTOUT, reqObj);
 		};
+
+		this.getStudentPin = function(studentId){
+			return WebService.get(PINS_ENDPOINTS.STUDENT_PIN_GET, {student_id : studentId});
+		};
+
+		this.generateStudentPin = function(studentId){
+			return WebService.get(PINS_ENDPOINTS.STUDENT_PIN_GENERATE, {student_id : studentId});
+		}
 
 
 	}]);

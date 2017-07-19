@@ -42,8 +42,8 @@ class Reports extends Rest_Ctrl {
             $student_id = $req['student_id'];
         }
         
-        $session_id = isset($req['session_id']) ? $req['session_id'] : $this->myapp->get_current_session_id();
-        $term_id = isset($req['session_id']) ? $req['session_id'] : $this->myapp->get_current_term_id();
+        $session_id = isset($req['session_id']) && is_valid_string($req['session_id']) ? $req['session_id'] : $this->myapp->get_current_session_id();
+        $term_id = isset($req['term_id']) && is_valid_string($req['term_id']) ? $req['term_id'] : $this->myapp->get_current_term_id();
 
         $student = $this->Student->get_student($student_id, $session_id);
         $class = $this->Student->get_class_for_student($student_id, $session_id);

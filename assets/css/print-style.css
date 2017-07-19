@@ -1,0 +1,34 @@
+@media print and(color){
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+p, ol li, h4 {
+    line-height: 25px;
+    font-size:16px;
+}
+.container {
+    padding-top:40px;
+}
+
+.steps-list {
+    padding-top: 6px;
+    font-family: "Times New Roman";
+}
+
+.steps-list h4 {
+    font-weight:bold;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}

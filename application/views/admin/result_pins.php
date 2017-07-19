@@ -4,17 +4,20 @@
         <loader-view></loader-view>
         <ul class="nav nav-tabs">
             <li class="active">
-                <a href="#view-pins" data-toggle="tab">View Pins</a>
+                <a href="#view-class-pins" data-toggle="tab">Class</a>
+            </li>
+            <li class="">
+                <a href="#view-student-pins" data-toggle="tab">Student</a>
             </li>
         </ul>
         
         <!-- Tab Content -->
         <div class="tab-content">
 
-            <div class="tab-pane active" id="view-pins">
+            <div class="tab-pane active" id="view-class-pins">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="text-center text-uppercase panel-title">View Pins</h3>
+                        <h3 class="text-center text-uppercase panel-title">CLASS VIEW</h3>
                     </div>
                     <div class="panel-body">
                         <div class="row">
@@ -94,6 +97,22 @@
                         </div>
                     </div>
                     <div class="panel-footer">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="view-student-pins">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="text-center text-uppercase panel-title">STUDENT VIEW</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <search-for-student select-action="viewStudentPin(student)"></search-for-student>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

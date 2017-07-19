@@ -1,10 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="modal-header">
+    <h4>
+        <span ng-bind="student.student_name"></span>
+        <i class="fa fa-times pull-right" ng-click="close()" style="cursor:pointer;"></i>
+    </h4>
+</div>
+<div class="modal-body">
+
+    <div ng-show="hasPin">
+        <h3>Pin</h3>
+        <span>{{studentPin.pin}}</span>
+
+        <h3>Serial</h3>
+        <span>{{studentPin.serial}}</span>
+    </div>
+
+    <div ng-show="!hasPin">
+        <p class="text-info text-center"><i class="fa fa-warning"></i> No pin generated for student</p>
+    </div>
+
+    <hr/>
+    <div class="text-center">
+        <button class="btn btn-primary" ng-disabled="loading" ng-click="generateStudentPin()">
+            <span ng-show="!loading">Generate Pin</span>
+            <span ng-show="loading"><i class="fa fa-spinner fa-spin"></i></span>
+        </button>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <span class="pull-left text-danger" ng-show="errorMessage && errorMessage.length > 0">
+        {{errorMessage}}
+    </span>
+    <button class="btn btn-default btn-sm" data-dismiss="modal" ng-click="close()">Close</button>
+</div>

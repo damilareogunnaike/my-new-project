@@ -137,6 +137,8 @@ studentsModule.directive("searchForStudent",['StudentsService','STUDENT_PARTIALS
 		templateUrl : STUDENT_PARTIALS.SEARCH,
 		link : function(scope, elem, attrs){
 			scope.editSession = (attrs.editSession != undefined) ? eval(attrs.editSession) : true;
+			if(!scope.editSession){
+			}
 		}
 	}
 }]);

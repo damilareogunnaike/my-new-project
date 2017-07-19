@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title><?=isset($title) ? $title : '';?></title>
+    <title><?=isset($title) ? $title : '';?></title>
 
-<?=link_tag('assets/bootstrap/css/bootstrap.css')?>
-<?=link_tag('assets/css/style.css')?>
+    <?=link_tag('assets/bootstrap/css/bootstrap.css')?>
+    <?=link_tag('assets/css/style.css')?>
+    <?=link_tag('assets/css/print-style.css');?>
 
-
+    
 	<style>
 		img {
             width:100px;

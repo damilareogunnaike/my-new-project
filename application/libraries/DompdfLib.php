@@ -27,6 +27,11 @@ class DompdfLib implements PDFLibrary {
 		$this->paper_size = 'A4';
 		$this->orientation = 'portrait';
 		$this->dompdf = new Dompdf();
+
+		$options = new \Dompdf\Options();
+		$options->setIsHtml5ParserEnabled(true);
+		$options->setLogOutputFile(APPPATH . "/logs/dompdf.txt");
+		$this->dompdf->setOptions($options);
 	}
 
 
@@ -48,12 +53,8 @@ class DompdfLib implements PDFLibrary {
 
 	public function convert(){
 
-		$this->dompdf->set_option('isHtml5ParserEnabled', true);
-
 		$this->dompdf->setPaper($this->paper_size, $this->orientation);
-
 		$this->dompdf->loadHtml($this->html);
-
 		$this->dompdf->render();
 		return true;
 	}

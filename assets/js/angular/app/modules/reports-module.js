@@ -66,8 +66,8 @@ ReportsModule.service("ReportsService", ["WebService",'REPORTS_ENDPOINTS',
             })
         };
 
-        this.getStudentsReport = function(studentId){
-            return WebService.get(REPORTS_ENDPOINTS.STUDENT_REPORT, {student_id: studentId});
+        this.getStudentsReport = function(reqObj){
+            return WebService.get(REPORTS_ENDPOINTS.STUDENT_REPORT, reqObj);
         }
 
     }]);

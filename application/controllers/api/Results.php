@@ -18,7 +18,6 @@ class Results extends Rest_Ctrl {
         
         $this->User = $this->Users->get($this->session->userdata("username"));
     }
-    
 
     public function students_result_get(){
         $student_id = $this->input->get("student_id");

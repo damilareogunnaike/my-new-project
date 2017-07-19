@@ -25,12 +25,37 @@
                 <md-tabs md-dynamic-height md-border-bottom>
                     <md-tab label="Results">
                         <md-content class="md-padding" layout="column">
+
                             <md-toolbar class="md-accent">
                                 <div class="md-toolbar-tools">
                                     <span class="flex">Session: {{result.result_info.session}}</span>
                                     <span class="flex">Term: {{result.result_info.term}}</span>
                                 </div>
                             </md-toolbar>
+
+                            <div layout="row" layout-padding="50px">
+                                <md-input-container flex="30">
+                                    <label>Session</label>
+                                    <md-select ng-model="resultRequest.session_id" disabled="true">
+                                        <md-option ng-repeat="record in sessions" ng-value="record.school_session_id" ng-selected="record.current == 1">
+                                            {{record.school_session_name}}
+                                        </md-option>
+                                    </md-select>
+                                </md-input-container>
+
+                                <md-input-container flex="30" flex="offset="10">
+                                    <label>Term</label>
+                                    <md-select ng-model="resultRequest.term_id">
+                                        <md-option ng-repeat="record in terms" ng-value="record.school_term_id" ng-selected="record.current == 1">
+                                            {{record.school_term_name}}
+                                        </md-option>
+                                        <md-option ng-value="'all'">Cumulative</md-option>
+                                    </md-select>
+                                </md-input-container>
+                                <div flex="30">
+                                    <md-button class="md-raised md-primary" ng-click="getResults()">Get Results</md-button>
+                                </div>
+                            </div>
 
                             <md-content flex="60">
                                 <h4>Subject Scores</h4>

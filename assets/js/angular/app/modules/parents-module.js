@@ -121,8 +121,8 @@ ParentsModule.controller("DashboardController", ["$rootScope","$scope","$cookies
 }]);
 
 
-ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state","StudentsService","ReportsService",
-    function($rootScope, $scope, $state, StudentsService, ReportsService){
+ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state","StudentsService","ReportsService","TermsService", "SessionsService",
+    function($rootScope, $scope, $state, StudentsService, ReportsService, TermsService, SessionsService){
 
         $scope.loading = false;
 
@@ -154,15 +154,20 @@ ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state",
 
         $scope.getStudentsProfile();
 
+        $scope.resultRequest = {
+            student_id: '',
+            session_id : '',
+            term_id : ''
+        };
+
         $scope.result = {};
+
         $scope.getResults = function(){
             $scope.loading = true;
-            var req = {
-                student_id : $scope.studentData.student_id,
-                token : $scope.studentData.token
-            };
+            $scope.resultRequest.student_id = $scope.studentData.student_id;
+            console.log($scope.resultRequest);
 
-            ReportsService.getStudentsReport($scope.studentData.student_id).then(function(response){
+            ReportsService.getStudentsReport($scope.resultRequest).then(function(response){
                 $scope.loading = false;
                 if(response.success){
                     $scope.result = response.data;
@@ -172,6 +177,7 @@ ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state",
                 console.log("error occurred");
             })
         };
+
         $scope.getResults();
 
         $scope.getDefaultImage = function () {
@@ -182,6 +188,22 @@ ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state",
             }
             return image;
         };
+
+        $scope.sessions = [];
+        $scope.terms = [];
+
+        SessionsService.getAll(function (response) {
+            if(response.success){
+                $scope.sessions = response.data;
+            }
+        });
+
+        TermsService.getAll(function(response){
+            if(response.success){
+                $scope.terms = response.data;
+            }
+        });
+
     }]);
 
 

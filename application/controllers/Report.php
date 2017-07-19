@@ -46,15 +46,16 @@
          $page_data['cog_skills_report'] = $this->Reports->get_cog_skills_report($student_id,$session_id,$term_id);
          $page_data['result_info'] = $result_info;
          $page_data['school_info'] = $school_info;
-
          $page_data['result_display'] = $this->Result->get_student_data_display();
+
+         return $page_data;
      }
 
 
      function print_report($student_id, $session_id, $term_id){
 
          $page_data = $this->get_result_data($student_id, $session_id, $term_id);
-         $class = $page_data['class'];
+         $class = $this->Student->get_class_for_student($student_id, $session_id);
 
          $report_page = strtolower($class['report_sheet_view']);
          $this->load->view('results/header_content',$page_data);

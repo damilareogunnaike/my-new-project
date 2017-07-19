@@ -16,6 +16,7 @@ class Reports_model extends Crud_model{
         parent::__construct();
         $this->CI = & get_instance();
         $this->CI->load->model("Classes_model", "Classes");
+        $this->CI->load->model("School_setup_model", "School_setup");
     }
     
   
@@ -92,8 +93,6 @@ class Reports_model extends Crud_model{
     }
     */
 
-
-
     function remove_duplicates($object){
         $new_object = array();
         foreach($object as $k=>$v){
@@ -111,8 +110,11 @@ class Reports_model extends Crud_model{
 
     public function get_students_subject_report($session_id, $term_id, $class_id, $student_id, $student_subjects){
 
+        if($term_id == "all"){
+            return $this->get_students_subject_report_cummulative($session_id, $class_id, $student_id, $student_subjects);
+        }
+
         $subject_ids = get_array_values($student_subjects, "subject_id");
-        $subject_ids_str = implode(",", $subject_ids);
 
         $where_clause = " WHERE session_id = {$session_id} AND term_id = {$term_id} AND class_id = {$class_id} AND t.subject_id = a.subject_id";
 
@@ -148,6 +150,9 @@ class Reports_model extends Crud_model{
         return $rs->num_rows() > 0 ? $rs->result_array() : NULL;
     }
 
+    public function get_student_subject_result_cumulative($session_id, $class_id, $student_id, $student_subjects){
+
+    }
 
     public function get_students_report_overview($session_id, $term_id, $class_id, $student_id){
 
@@ -214,8 +219,11 @@ class Reports_model extends Crud_model{
         }
     }
 
-
     public function get_class_students_report($session_id, $term_id, $class_id){
+
+        if($term_id == "all"){
+            return $this->get_class_students_report_for_session($session_id, $class_id);
+        }
 
         $this->db->select("CONCAT(b.surname, ' ' , b.middle_name, ' ', b.first_name) AS student_name, a.*, a.avg_score AS average");
         $this->db->from("student_class_result_overview a");
@@ -233,7 +241,75 @@ class Reports_model extends Crud_model{
         return $rs->num_rows() > 0 ? $rs->result_array() : array();
     }
 
+    public function get_class_students_report_for_session($session_id, $class_id){
+        $this->db->select("CONCAT(b.surname, ' ' , b.middle_name, ' ', b.first_name) AS student_name, a.student_id, GROUP_CONCAT(a.total_score) as total_scores, GROUP_CONCAT(a.avg_score) as averages,
+                        GROUP_CONCAT(a.max_obtainable) as max_obtainables, GROUP_CONCAT(a.percentage) as percentages,
+                        GROUP_CONCAT(a.term_id) as terms, SUM(a.total_score) as total_score, ROUND(AVG(a.avg_score),2) AS avg_score,
+                        AVG(a.percentage) as percentage, SUM(a.max_obtainable) AS max_obtainable");
+        $this->db->from("student_class_result_overview a");
+        $this->db->where(array("a.session_id"=>$session_id, "a.class_id"=>$class_id));
+        $this->db->group_by("a.student_id");
+        $this->db->join("student_biodata b", "a.student_id = b.id");
+        $this->db->order_by("avg_score", "DESC");
 
+        $rs = $this->db->get();
+
+        if($rs->num_rows() > 0){
+
+            $all_terms = $this->CI->School_setup->get_school_terms();
+
+            $last_position = 0;
+            $last_lowest_score = 2147483647;
+
+            $result_terms = [];
+            $terms = [];
+            foreach($rs->result_array() as $row){
+                $student = array("student_name"=>$row['student_name']);
+
+                $term_arrangement = $row['terms'];
+                $terms = explode(",", $term_arrangement);
+                $total_scores = explode(",", $row['total_scores']);
+                $scores = [];
+                $index = 0;
+                foreach($terms as $term){
+                    $scores[$term] = $total_scores[$index++];
+                }
+
+                ksort($scores);
+
+                $student['student_id'] = $row['student_id'];
+                $student['scores'] = $scores;
+                $avg_score = $row['avg_score'];
+                $student['total_score'] = $row['total_score'];
+                $student['average'] = $row['avg_score'];
+                $student['percentage'] = $row['percentage'];
+
+                if($avg_score < $last_lowest_score){
+                    $last_position += 1;
+                    $last_lowest_score = $avg_score;
+                }
+
+                $student['position'] = $last_position;
+
+                $student_scores[] = $student;
+            }
+
+
+            if(is_array($terms)){
+                foreach($all_terms as $term){
+                    if(in_array($term['school_term_id'], $terms)){
+                        $result_terms[$term['school_term_id']] = $this->CI->School_setup->get_term_name($term['school_term_id']);
+                    }
+                }
+            }
+            $response['terms'] = $result_terms;
+            $response['term_keys'] = array_keys($result_terms);
+            $response['student_scores'] = $student_scores;
+            return $response;
+        }
+        return [];
+
+    }
 
     function get_cog_skills_report($student_id,$session_id,$term_id = NULL){
 

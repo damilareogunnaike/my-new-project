@@ -154,12 +154,10 @@
 
 					$existing_record = $this->_get_if_exists("student_result_overview", $record);
 					if($existing_record != null){
-
 						$update_record = $student_result_overview;
 						$update_record['record_id'] = $existing_record['record_id'];
 						$update_data[] = $update_record;
 						$updated_records += 1;
-
 					}
 					else {
 						$insert_data[] = array_merge($record, $student_result_overview);

@@ -55,6 +55,8 @@ SchoolSetupModule.run(['$rootScope','ClassesService',
 				console.log(error);
 			})
 		}
+
+
 	}]);
 
 
@@ -101,50 +103,77 @@ SchoolSetupModule.service("SubjectsService", ["WebService",'SETUP_ENDPOINTS',
 
 
 
-SchoolSetupModule.service("SessionsService", ["WebService",'SETUP_ENDPOINTS',
-	function(WebService,SETUP_ENDPOINTS){
+SchoolSetupModule.service("SessionsService", ["WebService",'SETUP_ENDPOINTS',"$q",
+	function(WebService,SETUP_ENDPOINTS, $q){
 
-		this.getAll = function(successFunc, errorFunc){
-			return WebService.get(SETUP_ENDPOINTS.SCHOOL_SESSION).then(function(response){
-				if(successFunc) {
-					successFunc(response);
-                }
-			},function(error){
-				if(errorFunc){
-					errorFunc(error)
-                }
-			});
-		};
+	var cachedSessions = [];
 
-		this.update  = function(sessionId, sessionObj){
-			return WebService.update(SETUP_ENDPOINTS.SCHOOL_SESSION, {"sessionId": sessionId, "sessionObj": sessionObj});
-		};
+	this.getAll = function(successFunc, errorFunc){
 
-		this.add = function(sessionObj){
-			return WebService.post(SETUP_ENDPOINTS.SCHOOL_SESSION, {"sessionObj": sessionObj});
+		if(cachedSessions.length > 0){
+			if(successFunc) {
+				successFunc({success:true, data: cachedSessions});
+            }
 		}
+		else {
+            return WebService.get(SETUP_ENDPOINTS.SCHOOL_SESSION).then(function (response) {
+            	if(response.success){
+            		cachedSessions = response.data;
+				}
+
+                if (successFunc) {
+                    successFunc(response);
+                }
+
+            }, function (error) {
+                if (errorFunc) {
+                    errorFunc(error)
+                }
+            });
+        }
+	};
+
+	this.update  = function(sessionId, sessionObj){
+		return WebService.update(SETUP_ENDPOINTS.SCHOOL_SESSION, {"sessionId": sessionId, "sessionObj": sessionObj});
+	};
+
+	this.add = function(sessionObj){
+		WebService.post(SETUP_ENDPOINTS.SCHOOL_SESSION, {"sessionObj": sessionObj});
+	}
 }]);
 
 
 SchoolSetupModule.service("TermsService", ["WebService",'SETUP_ENDPOINTS',
 	function(WebService,SETUP_ENDPOINTS){
 
-		this.getAll = function(successFunc, errorFunc){
-			return WebService.get(SETUP_ENDPOINTS.SCHOOL_TERMS).then(function(response){
-				successFunc(response);
-			},function(error){
-				errorFunc(error)
-			});
-		};
+	var cachedTerms = [];
 
-		this.update  = function(termId, termObj){
-			return WebService.update(SETUP_ENDPOINTS.SCHOOL_TERMS, {"termId": termId, "termObj": termObj});
-		};
+	this.getAll = function(successFunc, errorFunc){
 
-		this.add = function(termObj){
-			return WebService.post(SETUP_ENDPOINTS.SCHOOL_TERMS, {"termObj": termObj});
+		if(cachedTerms.length > 0){
+			successFunc({success:true, data:cachedTerms});
 		}
+		else {
+            return WebService.get(SETUP_ENDPOINTS.SCHOOL_TERMS).then(function (response) {
+                if (response.success) {
+                    cachedTerms = response.data;
+                }
 
+                successFunc(response);
+
+            }, function (error) {
+                errorFunc(error)
+            });
+        }
+	};
+
+	this.update  = function(termId, termObj){
+		return WebService.update(SETUP_ENDPOINTS.SCHOOL_TERMS, {"termId": termId, "termObj": termObj});
+	};
+
+	this.add = function(termObj){
+		return WebService.post(SETUP_ENDPOINTS.SCHOOL_TERMS, {"termObj": termObj});
+	}
 }]);
 
 
@@ -161,7 +190,7 @@ SchoolSetupModule.service("SubjectConfigService",["WebService", "SETUP_ENDPOINTS
 					errorFunc(error);
 				}
 			});
-		}
+		};
 
 
 		this.saveClassSubjects = function(requestObj, successFunc, errorFunc){
@@ -427,7 +456,6 @@ SchoolSetupModule.directive("subjectSelectionModesInfo", ['SUBJECT_SELECTION_MOD
  	}
  }]);
 
-
 SchoolSetupModule.directive("subjectSelectionModes",['SUBJECT_SELECTION_MODES',function(SUBJECT_SELECTION_MODES){
 	return {
 		restrict : 'AE',
@@ -446,10 +474,10 @@ SchoolSetupModule.directive("subjectSelectionModes",['SUBJECT_SELECTION_MODES',f
 	}
 }]);
 
-
 SchoolSetupModule.filter("subjectSelectionMode",function(SUBJECT_SELECTION_MODES,filterFilter){
 	return function(input){
 		var selectionMode = filterFilter(SUBJECT_SELECTION_MODES, {value:input});
 		return selectionMode[0].name;
 	}
 });
+

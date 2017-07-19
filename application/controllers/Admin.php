@@ -448,14 +448,15 @@ class Admin extends School_MS
 
         if(isset($data['class_id'])){ // Form Submitted
             $class_id = $data['class_id'];
-            $class_students = $this->Reports->get_class_students_report($session_id, $term_id, $class_id);
-            $page_data['msg'] = ($class_students != NULL) ? success_msg("Showing " . sizeof($class_students) . ""
+            $class_students_result = $this->Reports->get_class_students_report($session_id, $term_id, $class_id);
+            $page_data['msg'] = ($class_students_result != NULL) ? success_msg("Showing " . sizeof($class_students_result) . ""
            . " result(s).") : info_msg("No student found for this class");
-            $page_data['students'] = $class_students;
+            $page_data['students_results'] = $class_students_result;
             $page_data['class_name'] = $this->School_setup->get_class_name($class_id);
             $page_data['session_name'] = $this->School_setup->get_session_name($session_id);
             $page_data['term_name'] = $this->School_setup->get_term_name($term_id);
             $page_data['class_id'] = $class_id;
+            $page_data['term_id'] = $term_id;
         }
         
        $page_data['curr_session_id'] = $session_id;

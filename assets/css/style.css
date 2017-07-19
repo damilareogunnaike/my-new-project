@@ -117,7 +117,7 @@ body {
   body .main-view {
     background: #861c90; }
   body .sidebar {
-    padding-top: 20px; }
+    padding-top: 55px; }
     body .sidebar li {
       border-bottom: 1px solid #961fa1; }
       body .sidebar li:hover, body .sidebar li a:hover, body .sidebar li a:visited, body .sidebar li a:focus, body .sidebar li.active {

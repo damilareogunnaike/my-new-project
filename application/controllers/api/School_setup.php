@@ -37,13 +37,13 @@ class School_setup extends Rest_Ctrl {
 
     public function sessions_get(){
         $sessions = $this->School_setup->get_school_sessions();
-        $this->response(array("data"=>$sessions));
+        $this->response(array("success" => true, "data"=>$sessions));
     }
 
 
     public function school_terms_get(){
         $terms = $this->School_setup->get_school_terms();
-        $this->response(array("data"=>$terms));
+        $this->response(array("success" => true,"data"=>$terms));
     }
 
 

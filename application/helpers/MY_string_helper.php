@@ -197,6 +197,10 @@ function is_active_tab($active_tab,$tab_name){
 	return ($active_tab == $tab_name) ? "active" : "";
 }
 
+function is_valid_string($input){
+    return $input && strlen($input) > 0;
+}
+
 
 
 ?>

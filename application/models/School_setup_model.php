@@ -249,9 +249,9 @@ class School_setup_model extends Crud_model
        }
    }
    
-   function get_school_terms()
-   {
-       $this->db->order_by('school_term_name','ASC');
+   function get_school_terms(){
+       $this->db->where("active", 1);
+       $this->db->order_by('order','ASC');
        $rs = $this->db->get('school_term');
        return ($rs->num_rows() > 0) ? $rs->result_array() : NULL;
    }
