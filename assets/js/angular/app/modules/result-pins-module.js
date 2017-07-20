@@ -222,8 +222,6 @@ ResultPinsModule.controller("PinsController",['$scope','$rootScope', '$window','
         };
 
         $scope.viewStudentPin = function(student){
-        	$scope.loading = true;
-
         	$uibModal.open({
 				templateUrl : PINS_PARTIALS.STUDENT_PIN,
 				controller: function ($scope, student, PinsService, $uibModalInstance) {
@@ -238,7 +236,7 @@ ResultPinsModule.controller("PinsController",['$scope','$rootScope', '$window','
 					$scope.getPin = function(){
 						PinsService.getStudentPin(student.student_id).then(function(response){
 							if(response.success){
-								$scope.studentPin = true;
+								$scope.studentPin = response.data;
 							}
 							else {
 								$scope.errorMessage = response.msg || "Unable to generate pins";
@@ -249,9 +247,10 @@ ResultPinsModule.controller("PinsController",['$scope','$rootScope', '$window','
 					};
 
 					$scope.generateStudentPin = function(){
+						$scope.errorMessage = "";
 						PinsService.generateStudentPin(student.student_id).then(function(response){
                             $scope.loading = false;
-							if(response.result){
+							if(response.success){
 								$scope.studentPin = response.data;
 							}
 							else {

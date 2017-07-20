@@ -14,7 +14,6 @@ class Result_pins extends ApiBase {
         $this->load->model('School_setup_model','School_setup');
     }
 
-
     /**
     	Returns a list of all classes for which pin has been generated.
     */
@@ -27,7 +26,6 @@ class Result_pins extends ApiBase {
     	}
     	$this->response($response);
     }
-
 
     public function generated_delete($class_id = null){
     	if(is_numeric($class_id)) {
@@ -184,6 +182,26 @@ class Result_pins extends ApiBase {
             $file_path = $this->PDFLibrary->get_html_as_pdf_file($html, $file_name);
             $this->response(rest_success($file_path));
         }
+    }
+
+    public function student_pin_get(){
+        $req = $this->input->get();
+        $student_id = $req['student_id'];
+        $curr_session_id = $this->myapp->get_current_session_id();
+        $curr_term_id = $this->myapp->get_current_term_id();
+
+        $response = $this->Result_pins->get_by_session_term_student($curr_session_id, $curr_term_id, $student_id);
+        $this->response($response);
+    }
+
+    public function student_pin_generate_get(){
+        $req = $this->input->get();
+        $student_id = $req['student_id'];
+        $curr_session_id = $this->myapp->get_current_session_id();
+        $curr_term_id = $this->myapp->get_current_term_id();
+
+        $response = $this->Result_pins->generate_for_student($curr_session_id, $curr_term_id, $student_id);
+        $this->response($response);
     }
 
     private function get_image_data($image){

@@ -6,6 +6,8 @@ class Result_pins_model extends Crud_model {
 	public function __construct(){
 		$this->load->model("Student_model", "Students");
 		$this->CI = & get_instance();
+
+		$this->CI->load->model("Student_model", "Students");
 		$this->load->library("Myapp");
 	}
 
@@ -121,7 +123,6 @@ class Result_pins_model extends Crud_model {
     }
 
     public function get_by_session_term_class($session_id, $term_id, $class_id){
-
         $this->db->select("a.student_id, CONCAT(b.surname, ' ', b.first_name) AS student_name, a.*");
         $this->db->from("result_pins a, student_biodata b");
 	    $this->db->where("session_id", $session_id);
@@ -136,6 +137,47 @@ class Result_pins_model extends Crud_model {
         }
         else {
             return array();
+        }
+    }
+
+    public function generate_for_student($session_id, $term_id, $student_id){
+        $student = $this->CI->Students->get_student($student_id, $session_id);
+        $pin = $this->generate_pin($student_id, $student['student_name']);
+        $record = array(
+            "student_id"=>$student_id,
+            "session_id"=>$session_id,
+            "term_id" => $term_id,
+            "class_id" => $student['class']['class_id']
+        );
+
+        if($this->_record_exists("result_pins", $record)){
+            $updated = $this->_update("result_pins", $record, $pin);
+            if($updated){
+                return $this->get_by_session_term_student($session_id, $term_id, $student_id);
+            }
+        }
+        else {
+            $record = array_merge($record, $pin);
+            $record = $this->_add("result_pins", $record, "id");
+            return rest_success($record);
+        }
+    }
+
+    public function get_by_session_term_student($session_id, $term_id, $student_id){
+        $this->db->select("a.student_id, CONCAT(b.surname, ' ', b.first_name) AS student_name, a.*");
+        $this->db->from("result_pins a, student_biodata b");
+        $this->db->where("session_id", $session_id);
+        $this->db->where("term_id", $term_id);
+        $this->db->where("a.student_id", $student_id);
+
+        $this->db->where("a.student_id = b.id");
+
+        $rs = $this->db->get();
+        if($rs->num_rows() > 0){
+            return rest_success($rs->row_array());
+        }
+        else {
+            return rest_error("Pin not generated.");
         }
     }
 }

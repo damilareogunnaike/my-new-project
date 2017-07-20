@@ -45,7 +45,6 @@
 			return $student_scores;
 		}
 
-
 		public function get_subject_score($student_id, $session_id, $term_id, $class_id, $subject_id){
 			$where_clause = array("student_id"=>$student_id, "session_id"=>$session_id, 
 				"term_id"=>$term_id, "subject_id"=>$subject_id, "class_id"=>$class_id);
@@ -62,7 +61,6 @@
 
 			return $scores;
 		}
-
 
 		public function save_student_subject_scores($session_id, $term_id, $class_id, $student_id, $scores){
 
@@ -97,7 +95,6 @@
 			return ($this->db->affected_rows() > 0 || $updated) ? TRUE : FALSE; 
 		}
 
-
 		public function save_class_subject_scores($session_id, $term_id, $class_id, $subject_id, $scores){
 
 			$record = array("session_id"=>$session_id, "term_id"=>$term_id, "class_id"=>$class_id, 
@@ -129,8 +126,6 @@
 			}
 			return ($this->db->affected_rows() > 0 || $updated) ? TRUE : FALSE; 
 		}
-
-
 
 		/**
 		Computes result overview for all students in a class....
@@ -180,9 +175,7 @@
 				}
 			}
 			return $response;
-
 		}
-
 
 		public function calculate_student_result_overview($session_id, $term_id, $class_id, $student_id){
 

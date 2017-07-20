@@ -7,11 +7,23 @@
 <div class="modal-body">
 
     <div ng-show="hasPin">
-        <h3>Pin</h3>
-        <span>{{studentPin.pin}}</span>
 
-        <h3>Serial</h3>
-        <span>{{studentPin.serial}}</span>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>PIN</td>
+                            <td><strong>{{studentPin.pin}}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>SERIAL</td>
+                            <td><strong>{{studentPin.serial}}</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <div ng-show="!hasPin">
