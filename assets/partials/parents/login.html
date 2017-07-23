@@ -1,9 +1,28 @@
 <div class="login-page" ng-controller="ParentsLoginController">
-    <div class="container">
-        <div layout="row">
-            <div flex="30" flex-offset="35">
+    <div layout="column" layout-align="center stretch">
+        <div flex-gt-sm="40" class="banner" layout="column" layout-padding>
+            <div flex-gt-sm="80">
+                <h1 class="md-display-2">Evangel Model Comprehensive College, Owerri</h1>
+                <p class="md-subhead">
+                    Education for relevance
+                </p>
+            </div>
+            <div flex-gt-sm="20">
+                <h3 class="md-title">Student Portal</h3>
+            </div>
+        </div>
 
-                <div class="login-form-container">
+        <div flex="auto" class="countdown" layout="column" layout-gt-sm="row" layout-padding>
+            <div flex-gt-sm="60" layout="column" layout-align="center stretch">
+                <div flex="auto" md-colors="{color:'accent'}">
+                    <h4 class="md-headline center-align"> Welcome, results will be ready in:</h4>
+                </div>
+                <div flex="auto">
+                    <div countdown-timer="new Date(2017,6,23)"></div>
+                </div>
+            </div>
+            <div flex-gt-sm="40" class="login-form" layout="row">
+                <div class="login-form-container" flex="80" flex-offset="10" flex-gt-sm="60" flex-offset-gt-sm="20" >
                     <h2>Login</h2>
                     <div class="login-form">
                         <form name="loginForm">
@@ -16,18 +35,33 @@
                                 <label>Enter Serial</label>
                                 <input type="text" ng-model="loginData.serial" class="validate">
                             </md-input-container>
-                            <md-button class="md-raised md-primary" ng-click="getAccess()" ng-disabled="loading">Proceed</md-button>
+                            <div class="center-align">
+                                <md-button class="md-raised md-primary" ng-click="getAccess()" ng-disabled="true">Proceed</md-button>
+                                <p class="md-caption" md-colors="{color:'accent'}">Button will be enabled once results are available</p>
+                            </div>
                         </form>
                     </div>
-
-                    <!--<section class="footer" layout="row" layout-sm="column" layout-align="end center" layout-wrap>-->
-                        <!--<div layout="row" layout-align="start center" flex>-->
-                            <!--<a href="#" class="md-button">Having issues?</a>-->
-                            <!--<span flex></span>-->
-                        <!--</div>-->
-                    <!--</section>-->
                 </div>
             </div>
+        </div>
+
+
+        <div flex="auto" class="engagement" hide="false">
+            <div class="container" layout="column" layout-gt-sm="row">
+                <div flex flex-gt-sm="60">
+                    Blog posts
+                </div>
+                <div flex>
+                    Social Media
+                </div>
+            </div>
+        </div>
+        <div flex="10">
+        </div>
+        <div flex="10" class="footer">
+            <p class="center-align">
+                Evangel Model Comprehensive College, Owerri.
+            </p>
         </div>
     </div>
 </div>

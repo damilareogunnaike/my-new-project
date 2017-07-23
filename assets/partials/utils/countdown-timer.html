@@ -1,0 +1,26 @@
+<div layout="row">
+    <div flex>
+        <div class="timer-group">
+            <div class="unit">Days</div>
+            <div class="value"><span ng-bind="parseAndFormat(timer.days)"></span></div>
+        </div>
+    </div>
+    <div flex>
+        <div class="timer-group">
+            <div class="unit">Hours</div>
+            <div class="value"><span ng-bind="parseAndFormat(timer.hours)"></span></div>
+        </div>
+    </div>
+    <div flex>
+        <div class="timer-group">
+            <div class="unit">Minutes</div>
+            <div class="value"><span ng-bind="parseAndFormat(timer.minutes)"></span></div>
+        </div>
+    </div>
+    <div flex>
+        <div class="timer-group">
+            <div class="unit">Seconds</div>
+            <div class="value"><span ng-bind="parseAndFormat(timer.seconds)"></span></div>
+        </div>
+    </div>
+</div>

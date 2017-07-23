@@ -150,8 +150,13 @@ class Reports_model extends Crud_model{
         return $rs->num_rows() > 0 ? $rs->result_array() : NULL;
     }
 
-    public function get_student_subject_result_cumulative($session_id, $class_id, $student_id, $student_subjects){
-
+    public function get_students_subject_report_cummulative($session_id, $class_id, $student_id, $student_subjects){
+        /*
+        Expected response = array("
+        subject_name", 1st term, second term, third term, avg, position)
+        subject_name", 1st term, second term, third term, avg, position)
+        subject_name", 1st term, second term, third term, avg, position)
+        */
     }
 
     public function get_students_report_overview($session_id, $term_id, $class_id, $student_id){
@@ -317,7 +322,8 @@ class Reports_model extends Crud_model{
 
         $this->db->from("cognitive_skills a");
 
-        $join_clause = "a.skill_id = b.skill_id AND b.session_id = {$session_id} AND b.term_id = {$term_id} AND b.student_id = {$student_id}";
+        $join_clause = "a.skill_id = b.skill_id AND b.session_id = {$session_id} AND b.student_id = {$student_id}";
+        $join_clause .= ($term_id != "all") ? " AND b.term_id = {$term_id}" : "";
         $this->db->join("cog_skills_result b ", $join_clause, "left");
         $this->db->group_by("a.skill_id");
         $this->db->order_by("a.skill", "desc");

@@ -1,5 +1,5 @@
-$color1: rgb(63,81,181);
-$color2: #861c90;
+$color1: #AD1457;
+$color2: #2196F3;
 $color3: #f5a3fc;
 
 html {
@@ -13,20 +13,28 @@ body {
   .login-page {
     height: 100%;
     width: 100%;
-    background: $color1;
+    background: #ffffff;
 
+    .banner {
+      background: $color1 no-repeat center;
+      color: white;
+      text-align: center;
+    }
+
+    .countdown, .login-form {
+      background: #ffffff;
+    }
 
     .login-form-container {
-      margin-top: 100px;
 
       h2 {
-        color: #fff;
         text-align: center;
       }
 
       .login-form {
         background: white;
-        padding: 20px;
+        box-shadow: 0px 0px 1px 2px #efefef;
+        padding:10px;
       }
 
       .footer {
@@ -39,6 +47,7 @@ body {
         }
       }
     }
+
   }
 
 
@@ -53,7 +62,33 @@ body {
       max-width:100%;
       height: auto;
     }
-
   }
 
+  .timer-group {
+    border: 1px solid #efefef;
+    text-align: center;
+    margin: 10px;
+
+    .unit {
+      padding:3px;
+      background: #f7f8f9;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      overflow: auto;
+    }
+
+    .value {
+      text-align: center;
+      padding:3px;
+      background: #fff;
+      font-size:46px;
+      font-weight: bolder;
+    }
+  }
+
+  .center-align {
+    text-align: center;
+  }
 }

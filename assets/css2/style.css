@@ -6,22 +6,26 @@ body {
   body .login-page {
     height: 100%;
     width: 100%;
-    background: #3f51b5; }
-    body .login-page .login-form-container {
-      margin-top: 100px; }
-      body .login-page .login-form-container h2 {
+    background: #ffffff; }
+    body .login-page .banner {
+      background: #AD1457 no-repeat center;
+      color: white;
+      text-align: center; }
+    body .login-page .countdown, body .login-page .login-form {
+      background: #ffffff; }
+    body .login-page .login-form-container h2 {
+      text-align: center; }
+    body .login-page .login-form-container .login-form {
+      background: white;
+      box-shadow: 0px 0px 1px 2px #efefef;
+      padding: 10px; }
+    body .login-page .login-form-container .footer {
+      padding-top: 10px;
+      padding-left: 0; }
+      body .login-page .login-form-container .footer a {
         color: #fff;
-        text-align: center; }
-      body .login-page .login-form-container .login-form {
-        background: white;
-        padding: 20px; }
-      body .login-page .login-form-container .footer {
-        padding-top: 10px;
-        padding-left: 0; }
-        body .login-page .login-form-container .footer a {
-          color: #fff;
-          font-size: 13px;
-          text-decoration: none; }
+        font-size: 13px;
+        text-decoration: none; }
   body .student-view {
     margin-bottom: 50px; }
     body .student-view .img-container {
@@ -30,5 +34,25 @@ body {
     body .student-view .student-img {
       max-width: 100%;
       height: auto; }
+  body .timer-group {
+    border: 1px solid #efefef;
+    text-align: center;
+    margin: 10px; }
+    body .timer-group .unit {
+      padding: 3px;
+      background: #f7f8f9;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      overflow: auto; }
+    body .timer-group .value {
+      text-align: center;
+      padding: 3px;
+      background: #fff;
+      font-size: 46px;
+      font-weight: bolder; }
+  body .center-align {
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

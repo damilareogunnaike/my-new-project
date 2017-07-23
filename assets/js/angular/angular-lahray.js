@@ -301,7 +301,7 @@ ngLahray.directive("fixedHeight",function(){
       });
     }
   }
-})
+});
 
 ngLahray.directive("maxHeight",function(){
   return {
@@ -317,6 +317,43 @@ ngLahray.directive("maxHeight",function(){
   }
 });
 
+
+ngLahray.directive("countdownTimer", function(PARTIALS){
+    return {
+        restrict: 'AE',
+        replace : false,
+        templateUrl: PARTIALS.COUNTDOWN_TIMER,
+
+        link : function(scope, elem, attrs){
+            var date = eval(attrs['countdownTimer']);
+            var currentDate = new Date();
+            var difference = date.getTime() - currentDate.getTime();
+
+            var timer = {days: 0, hours : 0, minutes: 0, seconds: 0};
+            scope.timer = timer;
+
+            var seconds = 1000;
+            var minutes = 60 * 1000;
+            var hours = 60 * 60 * 1000;
+            var days = 24 * 60 * 60 * 1000;
+
+            scope.parseAndFormat = function(value){
+                return value < 0 ? '00' : (value < 10) ? '0' + value : value;
+            };
+
+            setInterval(function(){
+                timer.days = Math.floor(difference / days);
+                timer.hours = Math.floor((difference - (timer.days * days)) / hours);
+                timer.minutes = Math.floor((difference - ((timer.days * days) + (timer.hours * hours))) / minutes);
+                timer.seconds = Math.floor((difference - ((timer.days * days) + (timer.hours * hours) + (timer.minutes * minutes))) / seconds);
+                difference -= 1000;
+                scope.timer = timer;
+                scope.$apply();
+            }, 1000);
+
+        }
+    }
+});
 
 /* FILTERS */
 ngLahray.filter("sweetDate",function($filter){
@@ -373,3 +410,4 @@ ngLahray.filter("dayOfWeek",function(WEEKDAYS){
         return WEEKDAYS[input];
     };
 });
+
