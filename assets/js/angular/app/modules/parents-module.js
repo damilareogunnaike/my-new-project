@@ -162,15 +162,25 @@ ParentsModule.controller("StudentController", ["$rootScope", "$scope", "$state",
 
         $scope.result = {};
 
+        $scope.isCumulative = false;
+
+        $scope.$watch("resultRequest.term_id", function(newValue, oldValue){
+            console.log(newValue);
+            if(newValue != oldValue) {
+                $scope.getResults();
+            }
+        });
+
+
         $scope.getResults = function(){
             $scope.loading = true;
             $scope.resultRequest.student_id = $scope.studentData.student_id;
-            console.log($scope.resultRequest);
 
             ReportsService.getStudentsReport($scope.resultRequest).then(function(response){
                 $scope.loading = false;
                 if(response.success){
                     $scope.result = response.data;
+                    $scope.isCumulative = response.data.is_cumulative;
                 }
             }, function(response){
                 $scope.loading = false;

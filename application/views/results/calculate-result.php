@@ -33,7 +33,7 @@
 		        			</div>
 		        			<div class="col-md-2">
 		        				<label class="control-label">Select Term</label>
-		    					<terms class="input-sm" ng-model="computationParam.term_id"></term>
+		    					<terms class="input-sm" ng-model="computationParam.term_id"></terms>
 		        			</div>
 		        			<div class="col-md-3">
 		        				<label class="control-label">Select Class</label>

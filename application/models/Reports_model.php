@@ -111,7 +111,8 @@ class Reports_model extends Crud_model{
     public function get_students_subject_report($session_id, $term_id, $class_id, $student_id, $student_subjects){
 
         if($term_id == "all"){
-            return $this->get_students_subject_report_cummulative($session_id, $class_id, $student_id, $student_subjects);
+            $term_id = 0;
+            return $this->get_students_subject_report_cummulative($session_id, $class_id, $term_id, $student_id, $student_subjects);
         }
 
         $subject_ids = get_array_values($student_subjects, "subject_id");
@@ -150,13 +151,65 @@ class Reports_model extends Crud_model{
         return $rs->num_rows() > 0 ? $rs->result_array() : NULL;
     }
 
-    public function get_students_subject_report_cummulative($session_id, $class_id, $student_id, $student_subjects){
+    public function get_students_subject_report_cummulative($session_id, $class_id, $term_id, $student_id, $student_subjects){
         /*
         Expected response = array("
         subject_name", 1st term, second term, third term, avg, position)
         subject_name", 1st term, second term, third term, avg, position)
         subject_name", 1st term, second term, third term, avg, position)
         */
+
+        $subject_ids = get_array_values($student_subjects, "subject_id");
+
+        $this->db->from("subjects a");
+
+        $where_clause = " WHERE session_id = {$session_id}  AND class_id = {$class_id} AND t.subject_id = a.subject_id";
+
+        $max_query = "SELECT MAX(total_score) FROM subject_result_overview t" . $where_clause;
+        $min_query = "SELECT MIN(total_score) FROM subject_result_overview t" . $where_clause;
+        $avg_query = "SELECT AVG(total_score) FROM subject_result_overview t" . $where_clause;
+
+        $on_clause_2 = "a.subject_id = b.subject_id ";
+        $on_clause_2 .= "AND b.session_id = {$session_id} ";
+        $on_clause_2 .= "AND b.class_id = {$class_id} ";
+        $on_clause_2 .= "AND b.student_id = {$student_id} ";
+
+        $this->db->group_by("b.subject_id");
+        $this->db->where_in("a.subject_id", $subject_ids);
+        $this->db->select("a.subject_name, GROUP_CONCAT(b.total_score) AS total_scores, GROUP_CONCAT(b.term_id) AS terms, GROUP_CONCAT(position) AS positions");
+
+        $this->db->join("subject_result_overview b ", $on_clause_2, "left");
+
+        $rs = $this->db->get();
+
+        $all_terms = $this->CI->School_setup->get_school_terms();
+
+        if($rs->num_rows() > 0){
+            $result_data = [];
+            $data = $rs->result_array();
+            foreach($data as $row){
+                $scores = explode(",",$row['total_scores']);
+                $terms = explode(",",$row['terms']);
+                $positions = explode(",", $row['positions']);
+                $term_score_mapping = array_combine($terms, $scores);
+                $positions_mapping = array_combine($terms, $positions);
+
+                //Total score is score with term '0'
+                $row['total_score'] = $term_score_mapping[0];
+                $row['position'] = arr_val($positions_mapping, 0);
+                unset($term_score_mapping[0]);
+                $row['scores'] = $term_score_mapping;
+                $row['avg_score'] = number_format(array_sum($row['scores']) / sizeof($row['scores']), 2);
+                $result_data[] = $row;
+            }
+
+            $final_output = array();
+            $final_output['term_keys'] = $all_terms;
+            $final_output['subject_scores'] = $result_data;
+            return $final_output;
+        }
+
+        return NULL;
     }
 
     public function get_students_report_overview($session_id, $term_id, $class_id, $student_id){
@@ -253,11 +306,13 @@ class Reports_model extends Crud_model{
                         AVG(a.percentage) as percentage, SUM(a.max_obtainable) AS max_obtainable");
         $this->db->from("student_class_result_overview a");
         $this->db->where(array("a.session_id"=>$session_id, "a.class_id"=>$class_id));
+        $this->db->where("a.term_id !=", "0");
         $this->db->group_by("a.student_id");
-        $this->db->join("student_biodata b", "a.student_id = b.id");
+        $this->db->join("student_biodata b", "a.student_id = b.id", "right");
         $this->db->order_by("avg_score", "DESC");
 
         $rs = $this->db->get();
+        $response = array("terms"=>array(),"term_keys"=>array(),"student_scores"=>array());
 
         if($rs->num_rows() > 0){
 
@@ -312,7 +367,7 @@ class Reports_model extends Crud_model{
             $response['student_scores'] = $student_scores;
             return $response;
         }
-        return [];
+        return $response;
 
     }
 

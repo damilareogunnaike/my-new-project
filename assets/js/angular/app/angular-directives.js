@@ -92,6 +92,123 @@ myApp.directive("schoolSetup",['$rootScope','APP_ENDPOINTS','PARTIALS','WebServi
         }
 }]);
 
+myApp.directive("position", function(){
+    return {
+        restrict : 'AE',
+        replace : true,
+        scope : {},
+        template : '<span class="position">{{value}}</span>',
+        link: function(scope, elem, attrs){
+
+            var position = new String(attrs.value) || 0;
+            if(position == 0){
+                scope.value = "N-th"
+            }
+            else if(position.endsWith("1")){
+                scope.value = position + "st";
+            }
+            else if(position.endsWith("2")){
+                scope.value = position + "nd";
+            }
+            else if(position.endsWith("3")) {
+                scope.value = position + "rd";
+            }
+            else {
+                scope.value = position + "th";
+            }
+        }
+    }
+});
+
+myApp.directive("grade", function(){
+    return {
+        restrict : 'AE',
+        replace : true,
+        scope : {},
+        template : "<span ng-class=\"{failed:isGrade('F'), passed:isGrade('D'), average : isGrade('C'), good:isGrade('B'), excellent:isGrade('A')}\"><strong>{{grade}}</strong></span>",
+        link: function(scope, elem, attrs){
+
+            var totalScore = attrs.totalScore || 0;
+
+            scope.totalScore = totalScore;
+            scope.grade = "F";
+
+            scope.isGrade = function(grade){
+                return scope.grade == grade;
+            };
+
+            if(totalScore >= 70){
+                scope.grade = "A";
+            }
+            else if(totalScore < 70 && totalScore >= 60){
+                scope.grade = "B";
+            }
+            else if(totalScore < 60 && totalScore >= 50){
+                scope.grade = "C";
+            }
+            else if(totalScore < 50 && totalScore >= 40) {
+                scope.grade = "D";
+            }
+            else {
+                scope.grade = "F";
+            }
+        }
+    }
+});
+
+
+
+myApp.directive("comment", function(){
+    return {
+        restrict : 'AE',
+        replace : true,
+        scope : {},
+        template : "<span ng-class=\"{failed:isGrade('F'), passed:isGrade('D'), average : isGrade('C'), good:isGrade('B'), excellent:isGrade('A')}\"><strong>{{comment}}</strong></span>",
+        link: function(scope, elem, attrs){
+
+            var totalScore = attrs.totalScore || 0;
+
+            scope.totalScore = totalScore;
+            scope.grade = "F";
+            scope.comment = "Fair";
+
+            scope.isGrade = function(grade){
+                return scope.grade == grade;
+            };
+
+            if(totalScore >= 70){
+                scope.grade = "A";
+                scope.comment = "Distinction";
+            }
+            else if(totalScore < 70 && totalScore >= 60){
+                scope.grade = "B";
+                scope.comment = "Excellent";
+            }
+            else if(totalScore < 60 && totalScore >= 50){
+                scope.grade = "C";
+                scope.comment = "Good";
+            }
+            else if(totalScore < 50 && totalScore >= 40) {
+                scope.grade = "D";
+                scope.comment = "Pass";
+            }
+            else {
+                scope.grade = "F";
+                scope.comment = "Fair";
+            }
+
+            function get_comment($score)
+            {
+                if($score <= 100 && $score >= 70) { return success_text("Distinction"); }
+                else if($score < 70 && $score >= 60) { return info_text("Excellent"); }
+                else if($score < 60 && $score >= 50) { return default_text ("Good");}
+                else if($score < 50 && $score >= 40) { return warning_text ("Pass");}
+                else if($score < 40 ) { return orange_text ("Fair"); }
+            }
+        }
+    }
+});
+
 
 /*
 myApp.directive("scoreInput",['$timeout',function($timeout){

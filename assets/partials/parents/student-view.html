@@ -1,7 +1,6 @@
 <div ng-controller="StudentController" class="student-view">
     <div layout="row" layout-align="center" layout-margin>
         <div flex="70">
-            <md-progress-linear md-mode="indeterminate" ng-show="loading"></md-progress-linear>
             <md-toolbar>
                 <div layout="row" layout-sm="column" layout-padding layout-wrap>
                     <div flex="25">
@@ -26,63 +25,106 @@
                     <md-tab label="Results">
                         <md-content class="md-padding" layout="column">
 
-                            <md-toolbar class="md-accent">
-                                <div class="md-toolbar-tools">
-                                    <span class="flex">Session: {{result.result_info.session}}</span>
-                                    <span class="flex">Term: {{result.result_info.term}}</span>
-                                </div>
-                            </md-toolbar>
-
-                            <div layout="row" layout-padding="50px">
-                                <md-input-container flex="30">
-                                    <label>Session</label>
-                                    <md-select ng-model="resultRequest.session_id" disabled="true">
-                                        <md-option ng-repeat="record in sessions" ng-value="record.school_session_id" ng-selected="record.current == 1">
-                                            {{record.school_session_name}}
-                                        </md-option>
-                                    </md-select>
-                                </md-input-container>
-
-                                <md-input-container flex="30" flex="offset="10">
-                                    <label>Term</label>
-                                    <md-select ng-model="resultRequest.term_id">
-                                        <md-option ng-repeat="record in terms" ng-value="record.school_term_id" ng-selected="record.current == 1">
-                                            {{record.school_term_name}}
-                                        </md-option>
-                                        <md-option ng-value="'all'">Cumulative</md-option>
-                                    </md-select>
-                                </md-input-container>
-                                <div flex="30">
-                                    <md-button class="md-raised md-primary" ng-click="getResults()">Get Results</md-button>
-                                </div>
-                            </div>
-
                             <md-content flex="60">
-                                <h4>Subject Scores</h4>
-                                 <md-table-container>
-                                <table md-table>
-                                    <thead md-head>
-                                        <tr md-row>
-                                            <td md-column>Subject</td>
-                                            <td md-column>CA 1</td>
-                                            <td md-column>CA 2</td>
-                                            <td md-column>Exam</td>
-                                            <td md-column>Total Score</td>
-                                            <td md-column>Position</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody md-body>
-                                        <tr md-row ng-repeat="record in result.subject_scores">
-                                            <td md-cell>{{record.subject_name}}</td>
-                                            <td md-cell>{{record.ca1}}</td>
-                                            <td md-cell>{{record.ca2}}</td>
-                                            <td md-cell>{{record.exam}}</td>
-                                            <td md-cell>{{record.total_score}}</td>
-                                            <td md-cell>{{record.position}}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </md-table-container>
+                                <div layout="row" layout-align="center center">
+                                    <div flex="20">
+                                        <h4 class="md-title text-uppercase" md-colors="{color:'primary'}">Subject Scores</h4>
+                                    </div>
+                                    <div flex layout="column">
+                                        <div flex="auto" ng-show="loading">
+                                            <p style="padding:0;margin: 0;" class="center-align">Loading ....</p>
+                                        </div>
+                                        <div flex="auto">
+                                            <md-progress-linear md-mode="indeterminate" ng-show="loading"></md-progress-linear>
+                                        </div>
+                                    </div>
+                                    <div flex>
+                                        <div layout="row">
+                                            <md-input-container flex hidden="true">
+                                                <label>Session</label>
+                                                <md-select ng-model="resultRequest.session_id" disabled="true">
+                                                    <md-option ng-repeat="record in sessions" ng-value="record.school_session_id" ng-selected="record.current == 1">
+                                                        {{record.school_session_name}}
+                                                    </md-option>
+                                                </md-select>
+                                            </md-input-container>
+                                            <md-input-container flex="auto" flex="offset="10">
+                                                <label>Term</label>
+                                                <md-select ng-model="resultRequest.term_id">
+                                                    <md-option ng-repeat="record in terms" ng-value="record.school_term_id" ng-selected="record.current == 1">
+                                                        {{record.school_term_name}}
+                                                    </md-option>
+                                                    <md-option ng-value="'all'">Cumulative</md-option>
+                                                </md-select>
+                                            </md-input-container>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                 <md-table-container ng-switch on="isCumulative">
+
+                                     <!-- Is Not Cumulative -->
+                                    <table md-table ng-switch-default>
+                                        <thead md-head>
+                                            <tr md-row>
+                                                <td md-column layout-padding>Subject</td>
+                                                <td md-column>CA 1</td>
+                                                <td md-column>CA 2</td>
+                                                <td md-column>Exam</td>
+                                                <td md-column>Total Score</td>
+                                                <td md-column>Position</td>
+                                                <td md-column>Grade</td>
+                                                <td md-column>Comment</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody md-body>
+                                            <tr md-row ng-repeat="record in result.subject_scores">
+                                                <td md-cell>{{record.subject_name}}</td>
+                                                <td md-cell>{{record.ca1}}</td>
+                                                <td md-cell>{{record.ca2}}</td>
+                                                <td md-cell>{{record.exam}}</td>
+                                                <td md-cell>{{record.total_score}}</td>
+                                                <td md-cell><position value="{{record.position}}"></position></td>
+                                                <td md-cell><grade total-score="{{record.total_score}}"></grade></td>
+                                                <td md-cell><comment total-score="{{record.total_score}}"></comment></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                     <!-- End of Is not cumulative score -->
+
+
+                                     <!-- Is Cumulative i.e(First to Third term) -->
+                                     <table md-table ng-switch-when="true">
+                                         <thead md-head>
+                                         <tr md-row>
+                                             <td md-column layout-padding="5px">Subject</td>
+                                             <td md-column ng-repeat="term in result.subject_scores.term_keys">
+                                                 {{term.school_term_name}}
+                                             </td>
+                                             <td md-column>Total</td>
+                                             <td md-column>Average</td>
+                                             <td md-column>Position</td>
+                                             <td md-column>Grade</td>
+                                             <td md-column>Comment</td>
+                                         </tr>
+                                         </thead>
+                                         <tbody md-body>
+                                         <tr md-row ng-repeat="record in result.subject_scores.subject_scores">
+                                             <td md-cell>{{record.subject_name}}</td>
+                                             <td md-cell ng-repeat="term in result.subject_scores.term_keys">
+                                                 {{record.scores[term.school_term_id]}}
+                                             </td>
+                                             <td md-cell>{{record.total_score}}</td>
+                                             <td md-cell>{{record.avg_score}}</td>
+                                             <td md-cell><position value="{{record.position}}"></position></td>
+                                             <td md-cell><grade total-score="{{record.total_score}}"></grade></td>
+                                             <td md-cell><comment total-score="{{record.total_score}}"></comment></td>
+                                         </tr>
+                                         </tbody>
+                                     </table>
+                                     <!-- End of Is Cumulative -->
+                                </md-table-container>
                             </md-content>
                             <md-divider></md-divider>
                     </md-tab>

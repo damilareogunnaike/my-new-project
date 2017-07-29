@@ -9,6 +9,6 @@
     <script>
         var APP_BASE_URL = "<?=$this->config->item('base_url');?>";
     </script>
-    <title>Portal</title>
+    <title>Evangel Model</title>
 </head>
 <body>

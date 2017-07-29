@@ -46,8 +46,18 @@
 		}
 
 		public function get_subject_score($student_id, $session_id, $term_id, $class_id, $subject_id){
-			$where_clause = array("student_id"=>$student_id, "session_id"=>$session_id, 
-				"term_id"=>$term_id, "subject_id"=>$subject_id, "class_id"=>$class_id);
+			$where_clause = array(
+			    "student_id"=>$student_id,
+                "session_id"=>$session_id,
+                "subject_id"=>$subject_id,
+                "class_id"=>$class_id);
+
+			$this->db->select("SUM(ca1) AS ca1, SUM(ca2) AS ca2, SUM(exam) AS exam");
+
+			if($term_id > 0){
+			    $where_clause["term_id"]= $term_id;
+            }
+
 			$rs = $this->_get_where("results", $where_clause);
 
 			$scores = array("ca1"=>0, "ca2"=>0, "exam"=>0, "total_score"=>0);
@@ -136,6 +146,7 @@
 
 			$response = array("status"=>false);
 			$updated_records = 0;
+
 			if(is_array($class_students) && sizeof($class_students) > 0){
 				$insert_data = array();
 				$update_data = array();
@@ -206,9 +217,16 @@
 				$this->db->where_in("subject_id", $subject_ids_str, FALSE);
 
 				$this->db->where("session_id",$session_id);
-				$this->db->where("term_id",$term_id);
 				$this->db->where("class_id",$class_id);
 				$this->db->where("student_id",$student_id);
+
+				//It's not third term.
+				if($term_id <= 0) {
+                    $this->db->where("term_id != 0");
+                }
+                else {
+                    $this->db->where("term_id", $term_id);
+                }
 
 				$rs = $this->db->get("results");
 
@@ -223,8 +241,6 @@
 			return $overview;
 
 		}
-
-
 
 		/**
 		This computes each student's position per subject in a class.
@@ -241,10 +257,12 @@
 				}
 			}
 			return $response;
-
 		}
 
-
+		/*
+		 * Computes the position of each student in this subject for selected term.
+		 * If term_id is 0, then all terms.
+		 */
 		public function compute_class_subject_position($session_id, $term_id, $class_id, $subject_id){
 
 			$insert_data = array();
@@ -257,17 +275,10 @@
 				"subject_id"=>$subject_id
 				);
 
-
 			$subject_students = $this->Students->get_by_session_and_class_and_subject($session_id, $class_id, $subject_id);
-			
-			$subject_student_scores = $this->get_subject_students_scores($subject_id, $class_id, $term_id, $session_id, $subject_students);
-
-
-			$student_scores = get_array_values($subject_student_scores, "total_score");
+            $subject_student_scores = $this->get_subject_students_scores($subject_id, $class_id, $term_id, $session_id, $subject_students);
 
 			$subject_student_scores = sort_multi_array($subject_student_scores, "scores", "desc");
-
-		
 
 			$position = 1;
 			$index = 1;
@@ -278,7 +289,6 @@
 
 				foreach($subject_student_scores as $score_record){
 					$subject_record = array();
-					$total_score = 0;
 					$student_id = $score_record['student_id'];
 					$total_score = floatval($score_record['total_score']);
 					
@@ -294,7 +304,6 @@
 
 					$record['student_id'] = $subject_record['student_id'] = $student_id;
 
-
 					$existing_record = $this->_get_if_exists("subject_result_overview", $record);
 
 					if($existing_record != null) {
@@ -305,7 +314,6 @@
 					else {
 						$insert_data[] = array_merge($record, $subject_record);
 					}
-					
 				}
 
 				if(sizeof($update_data) > 0){

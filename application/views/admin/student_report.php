@@ -114,7 +114,7 @@
                                         $scores = $student['scores'];
                                         foreach($term_keys as $key){
                                             ?>
-                                            <td><?=$scores[$key];?></td>
+                                            <td><?=isset($scores[$key]) ? $scores[$key] : '0';?></td>
                                             <?php
                                         }
                                     }

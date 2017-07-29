@@ -66,6 +66,7 @@ class Reports extends Rest_Ctrl {
         $data['cog_skills_report'] = $this->Reports->get_cog_skills_report($student_id,$session_id,$term_id);
         $data['result_info'] = $result_info;
         $data['school_info'] = $school_info;
+        $data['is_cumulative'] = $term_id == "all" || $term_id == 0 ? true : false;
 
         //$data['result_display'] = $this->Result->get_student_data_display();
 

@@ -38,6 +38,7 @@
          $result_info['session'] = $this->School_setup->get_session_name($session_id);
          $school_info = $this->School_setup->get_school_settings();
 
+         $page_data['is_cumulative'] = ($term_id == "all" || $term_id == 0) ? true : false;
          $page_data['student'] = $student;
          $page_data['class'] = $class;
          $page_data['subject_scores'] = $subject_scores;
@@ -48,6 +49,13 @@
          $page_data['school_info'] = $school_info;
          $page_data['result_display'] = $this->Result->get_student_data_display();
 
+         $is_cumulative = $term_id == "all" || $term_id == 0 ? true : false;
+
+         $page_data['is_cumulative'] = $is_cumulative;
+
+         if($is_cumulative){
+             $page_data = array_merge($page_data, $page_data['subject_scores']);
+         }
          return $page_data;
      }
 

@@ -8,7 +8,9 @@ body {
     width: 100%;
     background: #ffffff; }
     body .login-page .banner {
-      background: #AD1457 no-repeat center;
+      background: url("../images/evangel-bg.png");
+      background-size: cover;
+      background-position: 0px -130px;
       color: white;
       text-align: center; }
     body .login-page .countdown, body .login-page .login-form {
@@ -54,5 +56,24 @@ body {
       font-weight: bolder; }
   body .center-align {
     text-align: center; }
+  body .text-uppercase {
+    text-transform: uppercase; }
+  body thead {
+    font-weight: 900;
+    background: black;
+    color: white; }
+  body tbody tr td:first-child {
+    font-weight: bold; }
+  body .failed {
+    color: red; }
+  body .passed {
+    color: yellow;
+    text-shadow: 1px 1px #000; }
+  body .default {
+    color: darkgrey; }
+  body .good {
+    color: darkblue; }
+  body .excellent {
+    color: green; }
 
 /*# sourceMappingURL=style.css.map */

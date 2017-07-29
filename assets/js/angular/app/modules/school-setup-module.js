@@ -382,6 +382,7 @@ SchoolSetupModule.directive("terms",['$rootScope','TermsService',function($rootS
         	if($rootScope.terms == undefined){
         		TermsService.getAll(function(response){
         			scope.terms = response.data;
+        			scope.terms.push({school_term_id:0, 'school_term_name':"Cumulative"});
         			$rootScope.terms = response.data;
         		}, function(error){
         			console.log("Error fetching terms");

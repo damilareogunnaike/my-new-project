@@ -25,7 +25,7 @@
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1">
                                 <div id="print-window">
-                                <h3>Students in Class | <?=$class_name;?></h4>
+                                <h3>Students in Class | <?=$class_name;?></h3>
                                     <table class="table table-bordered no-datatable">
                                         <thead>
                                         <th>#</th>

@@ -16,7 +16,9 @@ body {
     background: #ffffff;
 
     .banner {
-      background: $color1 no-repeat center;
+      background:url("../images/evangel-bg.png");
+      background-size: cover;
+      background-position: 0px -130px;
       color: white;
       text-align: center;
     }
@@ -90,5 +92,43 @@ body {
 
   .center-align {
     text-align: center;
+  }
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+
+  thead {
+    font-weight: 900;
+    background: black;
+    color: white;
+  }
+
+  tbody {
+      tr td:first-child {
+        font-weight: bold;
+      }
+  }
+
+
+  .failed {
+    color: red;
+  }
+
+  .passed {
+    color: yellow;
+    text-shadow: 1px 1px #000;
+  }
+
+  .default {
+    color: darkgrey;
+  }
+
+  .good {
+    color: darkblue;
+  }
+
+  .excellent {
+    color: green;
   }
 }
